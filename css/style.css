@@ -90,29 +90,12 @@ body
 
 	}
 
-.footer span a.twitter:hover
+.footer span a:hover
 	{
 		color:#2daae4;
 
 	}
 
-.footer span a.google-plus:hover
-	{
-		color:#d74736;
-
-	}
-
-.footer span a.facebook:hover
-	{
-		color:#3c5a9a;
-
-	}
-
-.footer span a.linked:hover
-	{
-		color:#7ab8d1;
-
-	}
 
 .circle 
 	{
