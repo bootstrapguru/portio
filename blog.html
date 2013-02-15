@@ -65,14 +65,16 @@
 		   	</div>	
 	</div>
     
-	
-    
-    <div class="container well blog">
+ <div class="container">
 	<div class="row-fluid">
           <div class="page-header">
             <h1>Blog: Style 1</h1>
           </div>   
     </div>
+ </div>	
+    
+    <div class="container well blog">
+	
     	<div class="row">
 			<div class="span8 blog-body">
     	       <div class="post-summary"> 
@@ -204,7 +206,10 @@
                       <div class="control-group">
                        
                         <div class="controls">
-                          <input type="text" id="inputEmail" placeholder="Email required"/>
+                          <div class="input-prepend">
+						<span class="add-on icon-envelope"></span>
+						<input class="span14" id="prependedInput" type="text" placeholder="Email Address">
+					</div>
                         </div>
                       </div>
                       <div class="control-group">
