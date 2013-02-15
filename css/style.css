@@ -169,6 +169,7 @@ body
 	{
 		color:red;
 	}
+
 #myTab li a 
 	{
 		text-decoration:none;
@@ -177,6 +178,16 @@ body
 	{
 		border:8px solid #FFF;
 	}
+
+
+.thumbnail-box:hover,
+.thumbnail-box:focus {
+		  border-color: #0088cc;
+		  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+		  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+		  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+		}
+
 
 .avatar
 	{
