@@ -197,3 +197,39 @@ body
 		height:50px;
 
 	}
+	
+.social-icons p a
+	{
+		padding-left:25px;
+	}
+	
+.social-icons p a:hover
+	{
+		text-decoration:none;
+	}
+	
+.social-icons p a i.icon-twitter-sign
+	{
+		color:#5dd7fc;
+	}
+
+.social-icons p a i.icon-facebook-sign
+	{
+		color:#405d9f;
+	}
+
+.social-icons p a i.icon-google-plus-sign
+	{
+		color:#bd3527;
+	}
+
+.social-icons p a i.icon-linkedin-sign
+	{
+		color:#95cde4;
+	}
+	
+.social-icons p a i.icon-linkedin-sign:hover, .social-icons p a i.icon-google-plus-sign:hover, .social-icons p a i.icon-facebook-sign:hover, .social-icons p a i.icon-twitter-sign:hover
+	{
+		color:#000;
+	}
+
