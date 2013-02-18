@@ -76,18 +76,18 @@ body
 
 .footer
 {
-	background-color:gray;
+	background-color:#587193;
 	margin:0px;
 	padding-top:25px;
 	padding-bottom:25px;
-	border-top:2px solid #636363;
+	border-top:2px solid #fff;
 }
 
 .footer span a
 {
 	text-align:center;
 	text-decoration:none;
-	color:#333333;
+	color:#FFF;
 	
 }
 
