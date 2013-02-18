@@ -179,6 +179,10 @@ body
 	border:8px solid #FFF;
 }
 
+.thumbnail-box
+{
+	width:250px;
+}
 
 .thumbnail-box:hover,
 .thumbnail-box:focus {
@@ -231,5 +235,13 @@ body
 .social-icons p a i.icon-linkedin-sign:hover, .social-icons p a i.icon-google-plus-sign:hover, .social-icons p a i.icon-facebook-sign:hover, .social-icons p a i.icon-twitter-sign:hover
 {
 	color:#000;
+}
+
+@media (max-width: 270px)
+{
+	.thumbnail-box
+	{
+		width:150px;
+	}
 }
 
