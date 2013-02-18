@@ -270,10 +270,12 @@ body
 }
 
 .navbar .brand {
-    font-size: 46px;
+    font-size: 36px;
 	text-shadow: none;
 	margin-left:15px;
 	color:#FFFFFF;
+	
+	
 }
 .navbar .nav.pull-right {
 	top: 10px;
@@ -282,6 +284,8 @@ body
 .navbar .nav > li > a {
 	color: #F8F8F8;
 	font-size: 15px;
+	padding-bottom:15px;
+	padding-top:15px;
 	text-shadow: none;
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
