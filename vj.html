@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>My Portfolio</title> <!-- Change title here -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Add description, keywords and author -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		
+		<!-- HTML5 Support for IE -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shim.js"></script>
+		<![endif]-->
+		
+		<!-- Css StyleSheets -->
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+		<link href="css/style.css" rel="stylesheet" media="screen"/>
+        <link href="css/circles.css" rel="stylesheet" media="screen"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/font-awesome-ie7.css">
+		<![endif]-->	
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/jquery.easy-pie-chart.css" />
+		<style type="text/css">
+	
+		</style>
+		<!-- javaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript"
+		src="http://maps.googleapis.com/maps/api/js?sensor=false">
+		</script>
+		
+		<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(40.762081,-74.074974);
+				var myOptions = {
+				panControl: false,
+				zoomControl: false,
+				mapTypeControl: false,
+				scaleControl: false,
+				streetViewControl: true,
+				overviewMapControl: false,
+				draggable: true,
+				disableDoubleClickZoom: false,     //disable zooming
+				scrollwheel: false,
+			    zoom: 8,
+			    center: latlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP //   ROADMAP; SATELLITE; HYBRID; TERRAIN;
+				};
+				var map = new google.maps.Map(document.getElementById("map_canvas"),
+				myOptions);
+			}
+			
+		</script>
+	</head>
+	
+	<body onLoad="initialize()">
+		
+      
+
+
+	    		<div class="brand">
+		    			<span class="bike">&nbsp;</span>
+		    			<h1 class="logo"><a href="./">carlos sousa</a></h1>
+		    			<br/>
+		    			<h2>web · ui · art direction</h2>
+	    		</div>
+				<div class="mapCont">
+						<span id="map_canvas" style="display:block"></span>
+				</div>
+				
+          <div class="container-fluid" style="margin-top:550px">
+			<section class="main">
+				
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">
+							<div class="ch-info">
+								<h3>Use what you have</h3>
+								<p>by Angela Duncan <a href="http://drbl.in/eOPF">View on Dribbble</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info">
+								<h3>Common Causes of Stains</h3>
+								<p>by Antonio F. Mondragon <a href="http://drbl.in/eKMi">View on Dribbble</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info">
+								<h3>Pink Lightning</h3>
+								<p>by Charlie Wagers <a href="http://drbl.in/ekhp">View on Dribbble</a></p>
+							</div>
+						</div>
+						</li><li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info">
+								<h3>Pink Lightning</h3>
+								<p>by Charlie Wagers <a href="http://drbl.in/ekhp">View on Dribbble</a></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+			</section>
+		</div>
+		
+	</div>
+	
+</body>
+</html>		
