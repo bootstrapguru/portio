@@ -104,9 +104,10 @@ h2 small
 		color:#FFF;
 	}
 	
-.contact_me  .top
+.contact_me  a.top,.contact_me  a.top:hover
 	{
-		
+		color:#FFF;
+		text-decoration:none;
 	}
 
 @media (max-width: 767px) {
