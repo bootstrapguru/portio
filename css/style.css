@@ -16,20 +16,13 @@ body
 
 }
 h1{ color:#6f5c80; }
-.header
-	{
-		height:500px;
-		background: #42a2ce !important; 
-		margin-top:0px;
-	
-	}
+
 	
 .title_bg
 	{
 		text-align:center;
-		background-color:#6c4b88;
+		background-color:#42a2ce;
 		border-top:4px solid #6c4b88;
-		border-bottom:4px solid #6c4b88;
 		margin:0px auto;
 		padding:15px;
 		color:#FFF;
@@ -45,7 +38,7 @@ h1{ color:#6f5c80; }
 	}
 .title_bg:hover
 	{
-		background-color:#71b02f;
+		background-color:#9933cc;
 	-webkit-transition: background-color 500ms linear;
      -moz-transition: background-color 500ms linear;
      -o-transition: background-color 500ms linear;
