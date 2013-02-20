@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+
 .ch-grid {
 	margin: 20px 0 0 0;
 	padding: 0;
@@ -62,7 +64,6 @@
 
 .ch-info {
 	position: absolute;
-	background: #42a2ce;
 	width: inherit;
 	height: inherit;
 	border-radius: 50%;
@@ -85,7 +86,6 @@
 }
 
 .ch-info h3 {
-	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 22px;
@@ -99,7 +99,6 @@
 }
 
 .ch-info p {
-	color: #000;
 	padding: 10px 5px;
 	font-style: italic;
 	margin: 0 30px;
@@ -115,7 +114,6 @@
 
 .ch-info p a {
 	display: block;
-	color: #42a2ce;
 	font-style: normal;
 	font-weight: 700;
 	text-transform: uppercase;

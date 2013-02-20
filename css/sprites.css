@@ -1,0 +1,321 @@
+.deviantArt, .Digg, .Dribbble, .Facebook_hover, .Feed, .Flickr, .Forrst, .Google+, .Gowalla, .Last.fm, .LinkedIn, .Myspace, .PayPal, .Picasa, .Pinterest, .Share-This, .Skype, .Stumbleupon, .Tumblr, .Twitter, .Viddlr, .Vimeo, .Wordpress, .YouTube, .Behance, .Blogger, .Twitter_g, .Viddlr_g, .Vimeo_g, .Wordpress_g, .YouTube_g, .Behance_g, .Blogger_g, .deviantArt_g, .Digg_g, .Dribbble_g, .Facebook_g, .Feed_g, .Flickr_g, .Forrst_g, .Google+_g, .Gowalla_g, .Last.fm_g, .LinkedIn_g, .Myspace_g, .PayPal_g, .Picasa_g, .Pinterest_g, .Share-This_g, .Skype_g, .Stumbleupon_g, .Tumblr_g{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon
+	{
+		width:33px;
+		height:33px;
+	}
+.deviantArt{
+	background-position: -58px -113px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Digg{
+	background-position: -5px -109px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Dribbble{
+	background-position: -555px -56px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Facebook_hover{
+	background-position: -509px -61px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Feed{
+	background-position: -453px -57px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Flickr{
+	background-position: -406px -61px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Forrst{
+	background-position: -359px -64px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Google+{
+	background-position: -310px -59px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Gowalla{
+	background-position: -259px -53px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Last.fm{
+	background-position: -207px -56px ;
+	width: 33px;
+	height: 33px;
+}
+
+.LinkedIn{
+	background-position: -159px -60px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Myspace{
+	background-position: -108px -62px ;
+	width: 33px;
+	height: 33px;
+}
+
+.PayPal{
+	background-position: -60px -56px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Picasa{
+	background-position: -8px -62px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Pinterest{
+	background-position: -553px -10px ;
+	width: 32px;
+	height: 32px;
+}
+
+.Share-This{
+	background-position: -507px -12px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Skype{
+	background-position: -457px -11px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Stumbleupon{
+	background-position: -407px -13px ;
+	width: 32px;
+	height: 32px;
+}
+
+.Tumblr{
+	background-position: -358px -6px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Twitter{
+	background-position: -306px -9px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Viddlr{
+	background-position: -256px -7px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Vimeo{
+	background-position: -204px -6px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Wordpress{
+	background-position: -161px -11px ;
+	width: 33px;
+	height: 33px;
+}
+
+.YouTube{
+	background-position: -103px -8px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Behance{
+	background-position: -56px -15px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Blogger{
+	background-position: -9px -9px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Twitter_g{
+	background-position: -158px -207px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Viddlr_g{
+	background-position: -107px -204px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Vimeo_g{
+	background-position: -55px -204px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Wordpress_g{
+	background-position: -8px -208px ;
+	width: 33px;
+	height: 33px;
+}
+
+.YouTube_g{
+	background-position: -560px -159px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Behance_g{
+	background-position: -506px -158px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Blogger_g{
+	background-position: -460px -158px ;
+	width: 33px;
+	height: 33px;
+}
+
+.deviantArt_g{
+	background-position: -408px -161px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Digg_g{
+	background-position: -359px -160px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Dribbble_g{
+	background-position: -309px -163px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Facebook_g{
+	background-position: -261px -154px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Feed_g{
+	background-position: -204px -160px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Flickr_g{
+	background-position: -157px -161px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Forrst_g{
+	background-position: -108px -163px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Google+_g{
+	background-position: -57px -158px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Gowalla_g{
+	background-position: -7px -156px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Last.fm_g{
+	background-position: -556px -107px ;
+	width: 33px;
+	height: 33px;
+}
+
+.LinkedIn_g{
+	background-position: -509px -104px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Myspace_g{
+	background-position: -459px -106px ;
+	width: 33px;
+	height: 33px;
+}
+
+.PayPal_g{
+	background-position: -408px -110px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Picasa_g{
+	background-position: -359px -107px ;
+	width: 33px;
+	height: 32px;
+}
+
+.Pinterest_g{
+	background-position: -309px -104px ;
+	width: 32px;
+	height: 32px;
+}
+
+.Share-This_g{
+	background-position: -259px -107px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Skype_g{
+	background-position: -209px -112px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Stumbleupon_g{
+	background-position: -156px -110px ;
+	width: 32px;
+	height: 32px;
+}
+
+.Tumblr_g{
+	background-position: -111px -106px ;
+	width: 33px;
+	height: 33px;
+}
+

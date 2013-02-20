@@ -1,11 +1,17 @@
-
-@content-bg-color:#42a2ce;
+@content-bg-color: #42a2ce;  
 @content-color:#FFF;
 @content-head-color:#6c4b88;
 @head-text-color:#FFF;
-@content-head-hover-color:#9933cc;
+@content-head-hover-color:lighten(@content-head-color, 6%);
 @content-head-text-color:#FFF;
 @content-head-hover-duration:500ms;
+@profile-img-border:#e6e6e6;
+
+/* Feature Circle properties */
+@feature-circle-bgColor:#42a2ce;
+@feature-circle-titleColor:#fff;
+@feature-circle-textColor:#000;
+@feature-circle-linkColor:#42a2ce;
 
 
 .transition() {
@@ -15,6 +21,7 @@
        -o-transition: @content-head-hover-color @content-head-hover-duration linear;
           transition: @content-head-hover-color @content-head-hover-duration linear;
 }
+
 html	
 {
 	margin:0px;
@@ -74,6 +81,12 @@ body
 			{
 				.transition();
 			}
+		a
+			{
+				text-decoration:none;
+				color:#FFF;
+			}
+
 	}	
 	
 .head_info { top:100px; font-family: 'BebasNeueRegular'; z-index: 2; position: absolute;  text-align: center; color: @head-text-color; margin:0px auto; }
@@ -93,9 +106,88 @@ body
 		background: @content-bg-color !important; 
 		margin-top:50px;
 		padding-bottom:50px;
+		padding-bottom:50px;
+		color:@content-color;
+		font-size:16px;
+	}
+
+.about_me_info 
+	{
+		padding-top:50px;
+	}	
+
+
+.about_me_info  img
+	{
+		border:4px solid @profile-img-border;
+		border-radius:50%;
+	}
+
+h2 small 	
+	{
+		color: @profile-img-border;
+	}
+.about_me a.top, .about_me a.top:hover, .contact_me  a.top,.contact_me  a.top:hover, #portfolio_container a.top,#portfolio_container a.top:hover
+	{
+		color:#FFF;
+		text-decoration:none;
+	}
+
+#portfolio_container
+	{
+		margin-top:100px;
+	}
+
+.contact_me 
+	{
+		background: @content-bg-color !important; 
+		margin-top:50px;
+		padding-bottom:50px;
 		color:@content-color;
 	}
-.about_me p
+.form-horizontal
 	{
-		font-size:16px;
+		margin-top:50px;
+	}
+input[type="text"]
+	 {
+		 width: 250px;
+		 background: none;
+		 border: none;
+		 border-bottom: 1px solid @content-color;
+		 padding: 10px 5px;
+		 margin: 0px 85px 0 0;
+		 color: @content-color;
+		 font-size: 16px;
+	}
+	
+input[type="text"]:focus 
+	{
+		outline:none;
+		border: none;
+		border-left: 1px solid @content-color;
+		text-indent: 5px; 
+  	}
+
+/*  Circles */
+
+.ch-info 
+	{
+		background: @feature-circle-bgColor;
+	}
+	
+.ch-info h3
+	
+	{
+		color: @feature-circle-titleColor;
+	}
+
+.ch-info p 
+	{
+		color: @feature-circle-textColor;
+	}
+	
+.ch-info p a 
+	{
+		color: @feature-circle-linkColor;
 	}
