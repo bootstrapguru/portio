@@ -59,8 +59,8 @@ h2 small
 .about_me 
 	{
 		background: #42a2ce !important; 
-		margin-top:50px;
-		border-top:4px solid #e6e6e6;
+		
+		border-top:4px solid #6c4b88;
 		padding-bottom:50px;
 		color:#FFF;
 	}
@@ -106,10 +106,24 @@ h2 small
 	
 .contact_me  a.top,.contact_me  a.top:hover
 	{
-		color:#FFF;
+		color:#6c4b88;
 		text-decoration:none;
+		
 	}
+.blockHeading
+	{
+		background-color:#6c4b88;
+		margin-left:50px 0px 0px 0px;
 
+	}
+input[type="text"] {
+ width: 250px; background: none; border: none; border-bottom: 1px solid #FFF; border-left:#42a2ce; padding: 10px 5px; margin: 0 85px 0 0; color: #fff; font-size: 13px;
+}
+input[type="text"]:focus {
+	
+outline:none; border: none; border-left: 1px solid #FFF; text-indent: 5px; 
+  
+	}
 @media (max-width: 767px) {
   body {
     padding-right: 0px;
