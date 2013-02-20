@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>My Portfolio</title> <!-- Change title here -->
+		<title>Portfolio</title> <!-- Change title here -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--Add description, keywords and author -->
 		<meta name="description" content="">
@@ -17,6 +17,10 @@
 		
 		<!-- Css StyleSheets -->
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+        
+       <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"/>
+        
+        
 		<link href="css/style.css" rel="stylesheet" media="screen"/>
         <link href="css/circles.css" rel="stylesheet" media="screen"/>
         <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -25,33 +29,45 @@
 		<![endif]-->	
 		<link rel="stylesheet" href="css/animate.css" />
 		<link rel="stylesheet" href="css/jquery.easy-pie-chart.css" />
+		<link rel="stylesheet" href="css/thumbGallery.css" />
 		<style type="text/css">
-	
+			
 		</style>
 		<!-- javaScript -->
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/thumbGallery.js"></script>
 		
 		<script type="text/javascript"
 		src="http://maps.googleapis.com/maps/api/js?sensor=false">
 		</script>
 		
 		<script type="text/javascript">
+			//Image Hover
+			jQuery(document).ready(function(){
+				jQuery(function() {
+					jQuery('ul.da-thumbs > li').hoverdir();
+				});
+			});
+		</script>
+		
+		<script type="text/javascript">
 			function initialize() {
 				var latlng = new google.maps.LatLng(40.762081,-74.074974);
 				var myOptions = {
-				panControl: false,
-				zoomControl: false,
-				mapTypeControl: false,
-				scaleControl: false,
-				streetViewControl: true,
-				overviewMapControl: false,
-				draggable: true,
-				disableDoubleClickZoom: false,     //disable zooming
-				scrollwheel: false,
-			    zoom: 8,
-			    center: latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP //   ROADMAP; SATELLITE; HYBRID; TERRAIN;
+					panControl: false,
+					zoomControl: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					streetViewControl: true,
+					overviewMapControl: false,
+					draggable: true,
+					disableDoubleClickZoom: false,     
+					scrollwheel: false,
+					zoom: 8,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP //   ROADMAP; SATELLITE; HYBRID; TERRAIN;
 				};
 				var map = new google.maps.Map(document.getElementById("map_canvas"),
 				myOptions);
@@ -61,61 +77,366 @@
 	</head>
 	
 	<body onLoad="initialize()">
-		
-      
-
-
-	    		<div class="brand">
-		    			<span class="bike">&nbsp;</span>
-		    			<h1 class="logo"><a href="./">carlos sousa</a></h1>
-		    			<br/>
-		    			<h2>web · ui · art direction</h2>
-	    		</div>
-				<div class="mapCont">
+		<div id="top"></div>
+		<div class="header  alpha omega">
+			
+			<div class="head_info animated fadeInDownBig row-fluid">
+                <div class="row">
+					<div class="span4 offset4">
+						<div class="brand"> <h1>Website Name</h1> </div>
+						<img src="img/avatars/avatar1.jpg" class="avatar" />
+		    			<br/><br/>
+						<a href="#about_me"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="About me"><i class="icon-user icon-4x"></i></a>
+						<a href="#portfolio"   data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Portfolio"><i class="icon-trophy icon-4x"></i>	</a> 
+						<a href="#"   data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Contact me"><i class="icon-envelope icon-4x"></i></a>
+						
+					</div></div></div>
+					<script type="text/javascript">
+						$(document).ready(function(e) {
+							$('.head_info a').tooltip('hide');
+						});
+						
+					</script>
+					
+					<div class="mapCont">
 						<span id="map_canvas" style="display:block"></span>
-				</div>
-				
-          <div class="container-fluid" style="margin-top:550px">
-			<section class="main">
-				
-				<ul class="ch-grid">
-					<li>
-						<div class="ch-item ch-img-1">
-							<div class="ch-info">
-								<h3>Use what you have</h3>
-								<p>by Angela Duncan <a href="http://drbl.in/eOPF">View on Dribbble</a></p>
+					</div></div>
+					
+					<div class="container-fluid ">
+						<div class="row">
+							<div class="page-header" >
+								<h1 class="text-center"> Simple and responsive portfolio page   </h1>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-2">
-							<div class="ch-info">
-								<h3>Common Causes of Stains</h3>
-								<p>by Antonio F. Mondragon <a href="http://drbl.in/eKMi">View on Dribbble</a></p>
-							</div>
+						<section class="main">
+							<ul class="ch-grid">
+								<li>
+									<div class="ch-item ch-img-1 animated fadeIn">
+										<div class="ch-info">
+											<h3>HTML5 <br /> &amp; <br /> CSS3</h3>
+											<p>Lorem Ipsum is simply dummy text of of the the printing and typesetting industry Lorem ipsum.<a href="#">Read More.</a></p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-item ch-img-2 animated fadeIn">
+										<div class="ch-info">
+											<h3>Design Quality</h3>
+											<p>Lorem Ipsum is simply dummy text of of the the printing and typesetting industry Lorem ipsum.<a href="#">Read More.</a></p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-item ch-img-3">
+										<div class="ch-info">
+											<h3>Fluid Design</h3>
+											<p>Lorem Ipsum is simply dummy text of of the the printing and typesetting industry Lorem ipsum.<a href="#">Read More.</a></p>
+										</div>
+									</div>
+									</li><li>
+									<div class="ch-item ch-img-4">
+										<div class="ch-info">
+											<h3>Easy to Customize</h3>
+											<p>Lorem Ipsum is simply dummy text of of the the printing and typesetting industry Lorem ipsum.<a href="#">Read More.</a></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							
+						</section>
+					</div>
+					
+					<div class="about_me" id="about_me">
+						<a href="#top" class="top pull-right"> <i class="icon-arrow-up icon-3x"></i></a>
+						<div class="page-header" >
+							<h2 class="text-center">About me </h2>
 						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-3">
-							<div class="ch-info">
-								<h3>Pink Lightning</h3>
-								<p>by Charlie Wagers <a href="http://drbl.in/ekhp">View on Dribbble</a></p>
+						<div class="container-fluid">
+							
+							<div class="row-fluid about_me_info">
+								<div class="span8 offset2">
+									<div class="row">
+										<div class="span2">
+											<img src="img/gallery/profile.jpg" />
+										</div>
+										<div class="span1"></div>
+										<div class="span9">
+											<p> <i class="icon-quote-left"></i> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <i class="icon-quote-right"></i> </p>
+											
+											
+										</div>
+									</div>
+								</div>
 							</div>
+							
 						</div>
-						</li><li>
-						<div class="ch-item ch-img-3">
-							<div class="ch-info">
-								<h3>Pink Lightning</h3>
-								<p>by Charlie Wagers <a href="http://drbl.in/ekhp">View on Dribbble</a></p>
+					</div>
+					
+					<div class="container-fluid" id="portfolio_container">
+					<div class="row-fluid">
+        					 <a href="#top" class="top pull-right"> <i class="icon-arrow-up icon-3x"></i></a>  
+								<div class="image_grid span12">
+                                         
+                        							<div class="page-header"  id="portfolio" >
+								<h1 class="text-center"> My portfolio  </h1>
 							</div>
-						</div>
-					</li>
-				</ul>
-				
-			</section>
-		</div>
-		
-	</div>
-	
-</body>
-</html>		
+
+   				 <ul  id="list" class="portfolio_list da-thumbs">
+								<li>
+									<img src="img/gallery/thumb1.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb2.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb3.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb4.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb5.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb6.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb7.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb8.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb9.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb1.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb2.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb3.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb4.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb5.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb6.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb7.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb8.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb9.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb1.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb2.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb3.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb4.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb5.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb6.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb7.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb8.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+								<li>
+									<img src="img/gallery/thumb9.jpg"  alt="img" />
+									<article class="da-animate da-slideFromRight" style="display: block;">
+										<h3>New Year 2013</h3>
+										<em>Happy</em>
+										<span class="link_post"><a href="#"></a></span>
+										<span class="zoom"> <a href="#"></a> </span>
+									</article>
+								</li>
+							
+								
+							</ul></div></div></div>
+						<div class="contact_me">
+			<a href="#top" class="top pull-right"> <i class="icon-arrow-up icon-3x"></i></a>
+					<div class="container-fluid">
+                    	<div class="row-fluid">
+							
+                            <br />                            <br />                            <br />                            <br />                            <br />
+                            </div>
+                        </div>
+                    </div>
+
+	</body>
+</html>											
