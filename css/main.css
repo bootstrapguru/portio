@@ -1,7 +1,7 @@
 /*Default theme is theme2*/
 @content-bg-color: #d77f27;  
 @content-head-color:#c0400c; 
-@content-color:#FFF;
+@content-color:#000;
 @head-text-color:#FFF;
 @content-head-hover-color:lighten(@content-head-color, 6%);
 @content-head-text-color:#FFF;

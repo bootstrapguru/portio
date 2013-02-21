@@ -16,7 +16,7 @@
 		<![endif]-->
 		
 		<!-- Css StyleSheets -->
-		<link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+		<link  href="css/bootstrap.css" rel="stylesheet" media="screen"/>
         
 		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"/>
         
@@ -51,9 +51,9 @@
 		</script>
         <script src="http://lesscss.googlecode.com/files/less-1.0.30.min.js"></script>	
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/scroll.js"></script>
 		<script type="text/javascript" src="js/thumbGallery.js"></script>
-		
+        <script type="text/javascript" src="js/scroll.js"></script>
+        
 		<script type="text/javascript"
 		src="http://maps.googleapis.com/maps/api/js?sensor=false">
 		</script>
@@ -195,9 +195,19 @@
 					
 					<div class="title_bg " id="portfolio_container">
 						<h1 > My portfolio  <a href="#top" class="pull-right"> <i class="icon-arrow-up "></i></a> </h1>
+                        
+                  <div id="filters" class="btn-group">
+                    <button type="button" class="btn btn-warning" data-toggle="button" data-filter="*" >show all</button>
+                     <button type="button"  class="btn btn-warning"  data-toggle="button" data-filter=".some">Some</button>
+                     <button type="button"  class="btn btn-warning" data-toggle="button" data-filter=".four">Four</button>
+                     <button type="button"  class="btn btn-warning" data-toggle="button" data-filter=":not(.some)">Not some</button>
+                     <button type="button"   class="btn btn-warning" data-toggle="button" data-filter=":not(.four)">Not Four</button>
+                  </div>
+     
 					</div>
 					<br />
-					<div class="container-fluid" >
+                    
+  			<div class="container" >
 						
 						<div class="row-fluid">
 							
@@ -206,8 +216,8 @@
 									
 								</div>
 								
-								<ul  id="list" class="portfolio_list da-thumbs">
-									<li>
+								<ul  id="container" class="portfolio_list da-thumbs">
+									<li class="element some four">
 										<img src="img/gallery/theme1.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -216,7 +226,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+									<li class="element some">
 										<img src="img/gallery/theme2.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -225,7 +235,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+									<li class="element some">
 										<img src="img/gallery/theme3.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -234,7 +244,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+									<li class="element some">
 										<img src="img/gallery/theme4.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -243,7 +253,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+									<li class="element">
 										<img src="img/gallery/theme5.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -252,7 +262,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element">
 										<img src="img/gallery/theme6.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -261,7 +271,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element">
 										<img src="img/gallery/theme7.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -270,7 +280,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element">
 										<img src="img/gallery/theme8.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -279,7 +289,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element some">
 										<img src="img/gallery/theme9.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -288,7 +298,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element">
 										<img src="img/gallery/theme10.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -297,7 +307,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element some">
 										<img src="img/gallery/theme11.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -306,7 +316,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element some">
 										<img src="img/gallery/theme12.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -315,7 +325,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element">
 										<img src="img/gallery/theme13.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -324,7 +334,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element some">
 										<img src="img/gallery/theme14.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -333,7 +343,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element four some">
 										<img src="img/gallery/theme15.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -342,7 +352,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element">
 										<img src="img/gallery/theme16.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -351,7 +361,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element">
 										<img src="img/gallery/theme17.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -360,7 +370,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element four">
 										<img src="img/gallery/theme18.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -369,7 +379,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element some">
 										<img src="img/gallery/theme19.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -378,7 +388,7 @@
 											<span class="zoom"> <a href="#"></a> </span>
 										</article>
 									</li>
-									<li>
+																		<li class="element four">
 										<img src="img/gallery/theme20.png"  alt="img" />
 										<article class="da-animate da-slideFromRight" style="display: block;">
 											<h3>New Year 2013</h3>
@@ -411,8 +421,94 @@
 											</form>
 										</div>
 									</div>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    
 								</div>
 								
 					<div class="copyrights text-center"> <ul class="inline"><li>	Copyright ©2013 bootStrapGuru  </li><li> Powered by bootStrapGuru  </li><li> Theme designed by bootStrapGuru </li></ul></div>
+        
+ <script type="text/javascript" src="js/jquery.isotope.js"></script>
+ <script type="text/javascript">
+ // cache container
+var $container = $('#container');
+// initialize isotope
+$container.isotope({
+  // options...
+});
+
+// filter items when filter link is clicked
+$('#filters button').click(function(){
+  var selector = $(this).attr('data-filter');
+  $container.isotope({ filter: selector });
+  return false;
+});
+</script>
+                    		
 	</body>
 </html>												
