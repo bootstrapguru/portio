@@ -339,6 +339,12 @@ input[type="text"]:focus
 	opacity:0.9;
 }
 
+.da-thumbs li  img
+{
+	border:4px solid @content-bg-color;
+	width:250px;
+}
+
 span.link_post
 	{
 		background-color:@content-head-color;
