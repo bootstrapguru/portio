@@ -72,6 +72,7 @@
 	width:300px;
 	display:block;
 	opacity: 1;
+	background-color:#ececec;
 	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
 	z-index:999;
 	transition: all 400ms;
@@ -83,7 +84,7 @@
 	position:absolute;
 	width:51px;
 	height:51px;
-	background:#3d3d3d url(../img/settings.jpg) no-repeat center;
+	background:#FFF url(../img/settings.jpg) no-repeat center;
 	display:block;
 	right:-51px;
 	top:0px;
@@ -97,12 +98,12 @@
 	left:0px;
 }
 .panel .panel_title {
-	background:#3d3d3d;
+	background:#FFF;
 	padding:0 0 0 17px;
 	line-height:46px;
 	height:51px;
 	display:block;
-	color:#ffd200;
+	color:#000;
 	font-size:20px;
 	font-weight:bold;
 	text-align:left;
