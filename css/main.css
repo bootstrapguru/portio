@@ -4,7 +4,7 @@
 @content-color:#FFF;
 @head-text-color:#FFF;
 @content-head-hover-color:lighten(@content-head-color, 6%);
-@content-head-text-color:darken(#c73b0b,5%);
+@content-head-text-color:darken(#c73b0b,25%);
 @content-head-hover-duration:500ms;
 @profile-img-border:#e6e6e6;
 @link-color:#000;
@@ -18,8 +18,8 @@
 
 /* .customTheme(#696969,#3f3e3e); */
 
-.customTheme(#E667AF,#F56);
-
+.customTheme(#9d261d,#F56);
+.theme9();
 
 .theme1 () 
 	{
@@ -30,7 +30,8 @@
 .theme2 () 	
 	{
 		@content-bg-color: #d77f27;  
-		@content-head-color:#c0400c; 
+		@content-head-color:#c0400c;
+		@content-head-text-color:darken(#c73b0b,15%);
 	}
 
 .theme3 () 	
@@ -55,24 +56,28 @@
 	{
 		@content-bg-color: #e07d28;  
 		@content-head-color:#c73b0b;
+		@content-head-text-color:darken(#c73b0b,15%);
 	}
 
 .theme7 () 
 	{
 		@content-bg-color: #f2c545;  
 		@content-head-color:#e7a136;
+		@content-head-text-color:darken(#ba822c,1%);
 	}
 
 .theme8 () 
 	{
 		@content-bg-color: #bcbd84;  
 		@content-head-color:#978e43;
+		
 	}
 
 .theme9 () 
 	{
 		@content-bg-color: #c17953;  
 		@content-head-color:#9b2f10;
+		@content-head-text-color:#ca6c4b;
 	}
 
 .theme10 () 
@@ -133,6 +138,7 @@
 	{
 		@content-bg-color: #f2c545;  
 		@content-head-color:#d77624;
+		@content-head-text-color:darken(#c73b0b,25%);
 	}
 
 .theme20 () 
