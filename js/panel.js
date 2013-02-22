@@ -8,7 +8,7 @@ $(document).ready(function(){
 	
 		$('.color_item a').bind('click', function(){
 		theme = $(this).attr('rel');
-			var stylesheetFile = 'css/'+ theme +'.less';
+			var stylesheetFile = 'css/less/'+ theme +'.less';
 					var link  = document.createElement('link');
 					link.rel  = "stylesheet";
 					link.type = "text/less";

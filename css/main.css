@@ -25,6 +25,7 @@
  		@content-bg-color: #42a2ce;  
 		@content-head-color:#6c4b88;
 		@content-head-text-color:darken(@content-head-color,20%);
+		.scrollbar()
 	}
 
 .theme2 () 	
@@ -32,6 +33,7 @@
 		@content-bg-color: #d77f27;  
 		@content-head-color:#c0400c;
 		@content-head-text-color:darken(@content-head-color,20%);
+		.scrollbar()
 	}
 
 .theme3 () 	
@@ -180,6 +182,13 @@
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.scrollbar() {
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: @content-head-color; }
+::-webkit-scrollbar-thumb {  background: #FFF; }
+
 }
 
 html	
@@ -426,3 +435,7 @@ span.zoom
 	{
 		background-color:@content-head-color;
 	}
+
+/*polishing weird scroll bar we have  */
+
+
