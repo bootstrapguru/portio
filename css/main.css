@@ -19,7 +19,9 @@
 /* .customTheme(#696969,#3f3e3e); */
 
 .customTheme(#9d261d,#F56);
-.theme3();
+
+.theme1();
+
 
 .theme1 () 
 	{
@@ -243,6 +245,7 @@ a
 	{
 		text-align:center;
 		background-color:@content-head-color;
+		text-transform:uppercase;
 		border-top:4px solid @content-head-color;
 		margin:0px auto;
 		padding:15px;
