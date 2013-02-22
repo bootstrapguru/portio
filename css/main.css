@@ -1,12 +1,14 @@
 /*Default theme is theme2*/
-@content-bg-color: #d77f27;  
+@content-bg-color: #d77f27;
 @content-head-color:#c0400c; 
-@content-color:#000;
+@content-color:#FFF;
 @head-text-color:#FFF;
 @content-head-hover-color:lighten(@content-head-color, 6%);
-@content-head-text-color:#FFF;
+@content-head-text-color:darken(#c73b0b,5%);
 @content-head-hover-duration:500ms;
 @profile-img-border:#e6e6e6;
+@link-color:#000;
+@link-hover-color:#ccc;
 
 /* Feature Circle properties */
 @feature-circle-bgColor:@content-bg-color; /* #42a2ce; */
@@ -14,8 +16,10 @@
 @feature-circle-textColor:#000;
 @feature-circle-linkColor:#42a2ce;
 
-.customTheme(#696969,#3f3e3e);
-.theme21();	
+/* .customTheme(#696969,#3f3e3e); */
+
+.customTheme(#E667AF,#F56);
+
 
 .theme1 () 
 	{
@@ -151,10 +155,10 @@
 
 .transition() {
 	background-color: @content-head-hover-color;
-  -webkit-transition: @content-head-hover-color @content-head-hover-duration linear;
-     -moz-transition: @content-head-hover-color @content-head-hover-duration linear;
-       -o-transition: @content-head-hover-color @content-head-hover-duration linear;
-          transition: @content-head-hover-color @content-head-hover-duration linear;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 html	
@@ -167,6 +171,16 @@ body
 	font-family:"Geogrotesque-SemiBold",Helvetica,Arial,sans-serif;
 	color:@content-color;
 }
+
+a
+	{
+		color:@link-color;
+		&:hover
+		{
+			text-decoration:none;
+			color:@link-hover-color;	 
+		}	
+	}
 
 .header
 	{
@@ -211,7 +225,9 @@ body
 		margin:0px auto;
 		padding:15px;
 		color:@content-head-text-color;
-		
+		text-shadow: 0 1px 0 rgba(255,255,255,.2);
+		font-family: 'BebasNeueRegular';
+		font-size: 2.3em; 
 		&:hover 
 			{
 				.transition();
@@ -280,9 +296,19 @@ h2 small
 		padding-bottom:50px;
 		color:@content-color;
 	}
+	
 .form-horizontal
 	{
 		margin-top:50px;
+	}
+
+.form-horizontal button
+	{
+		background-color:@content-head-hover-color;
+		border:none;
+		color:#FFF;
+		padding:15px 30px;
+		font-size:18px;
 	}
 input[type="text"]
 	 {
@@ -304,9 +330,10 @@ input[type="text"]:focus
 		text-indent: 5px; 
   	}
 
-.copyrights
+
+.copyrights li
 	{
-		color:#000;
+		color:@link-color;
 	}
 /*  Circles */
 
