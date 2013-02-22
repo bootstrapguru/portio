@@ -19,12 +19,13 @@
 /* .customTheme(#696969,#3f3e3e); */
 
 .customTheme(#9d261d,#F56);
-.theme9();
+.theme12();
 
 .theme1 () 
 	{
  		@content-bg-color: #42a2ce;  
-		@content-head-color:#6c4b88; 
+		@content-head-color:#6c4b88;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme2 () 	
@@ -38,18 +39,21 @@
 	{
 		@content-bg-color: #90d676;  
 		@content-head-color:#278a15;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 	
 .theme4 () 	
 	{
 		@content-bg-color: #978e4f;  
 		@content-head-color:#594f1b; 
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 	
 .theme5 () 	
 	{
 		@content-bg-color: #974f5d;  
 		@content-head-color:#591b23; 
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme6 () 
@@ -63,13 +67,14 @@
 	{
 		@content-bg-color: #f2c545;  
 		@content-head-color:#e7a136;
-		@content-head-text-color:darken(#ba822c,1%);
+		@content-head-text-color:darken(#e7a136,20%);
 	}
 
 .theme8 () 
 	{
 		@content-bg-color: #bcbd84;  
 		@content-head-color:#978e43;
+		@content-head-text-color:darken(@content-head-color,20%);
 		
 	}
 
@@ -84,54 +89,63 @@
 	{
 		@content-bg-color: #c13f47;  
 		@content-head-color:#731115;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme11 () 
 	{
 		@content-bg-color: #731115;  
 		@content-head-color:#350608;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme12 () 
 	{
 		@content-bg-color: #9b2f10;  
 		@content-head-color:#4b1706;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme13 () 
 	{
 		@content-bg-color: #978e43;  
 		@content-head-color:#7d5e18;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme14 () 
 	{
 		@content-bg-color: #e7a136;  
 		@content-head-color:#d77624;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme15 () 
 	{
 		@content-bg-color: #c73b0b;  
 		@content-head-color:#921700;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme16 () 
 	{
 		@content-bg-color: #c13f47;  
 		@content-head-color:#350608;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme17 () 
 	{
 		@content-bg-color: #c17953;  
 		@content-head-color:#4b1706;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme18 () 
 	{
 		@content-bg-color: #bcbd84;  
 		@content-head-color:#7d5e18;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme19 () 
@@ -145,12 +159,14 @@
 	{
 		@content-bg-color: #e07d28;  
 		@content-head-color:#921700;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme21 () 
 	{
 		@content-bg-color: #7285bc;  
 		@content-head-color:#33458b;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .customTheme(@bg-color, @head-color)
