@@ -20,7 +20,7 @@
 
 .customTheme(#9d261d,#F56);
 
-.theme1();
+.theme5();
 
 
 .theme1 () 
@@ -251,7 +251,9 @@ a
 		padding:15px;
 		color:@content-head-text-color;
 		text-shadow: 0 1px 0 rgba(255,255,255,.2);
-		font-family: 'BebasNeueRegular';
+		font-family: 'Open Sans', sans-serif;
+		font-weight:bold;
+		font-style:italic;
 		font-size: 2.3em; 
 		&:hover 
 			{
@@ -290,6 +292,11 @@ a
 .about_me_info 
 	{
 		padding-top:50px;
+	}	
+
+.about_me_info .tagline
+	{
+		text-shadow: 2px 2px #000;
 	}	
 
 
@@ -343,6 +350,7 @@ h2 small
 		padding:15px 30px;
 		font-size:18px;
 	}
+	
 input[type="text"]
 	 {
 		 width: 250px;
