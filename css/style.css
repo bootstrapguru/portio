@@ -153,35 +153,88 @@
 	border-color:#3d3d3d;
 }
 
-.panel_item.color_panel li a.color1 {
-	background:#ffd200;
+.panel_item.color_panel li a.theme1 {
+	background:#6c4b88;
 }
-.panel_item.color_panel li a.color2 {
-	background:#ff8d00;
+
+.panel_item.color_panel li a.theme2 {
+	background:#c0400c;
 }
-.panel_item.color_panel li a.color3 {
-	background:#ff5b29;
+
+.panel_item.color_panel li a.theme3 {
+	background:#278a15;
 }
-.panel_item.color_panel li a.color4 {
-	background:#ff60af;
+
+.panel_item.color_panel li a.theme4 {
+	background:#594f1b;
 }
-.panel_item.color_panel li a.color5 {
-	background:#b36aff;
+
+.panel_item.color_panel li a.theme5 {
+	background:#591b23;
 }
-.panel_item.color_panel li a.color6 {
-	background:#2e7cff;
+
+.panel_item.color_panel li a.theme6 {
+	background:#c73b0b;
 }
-.panel_item.color_panel li a.color7 {
-	background:#0ab7e1;
+
+.panel_item.color_panel li a.theme7 {
+	background:#e7a136;
 }
-.panel_item.color_panel li a.color8 {
-	background:#88c800;
+
+.panel_item.color_panel li a.theme8 {
+	background:#978e43;
 }
-.panel_item.color_panel li a.color9 {
-	background:#dbe93a;
+
+.panel_item.color_panel li a.theme9 {
+	background:#9b2f10;
 }
-.panel_item.color_panel li a.color10 {
-	background:#a3a3a3;
+
+.panel_item.color_panel li a.theme10 {
+	background:#731115;
+}
+
+.panel_item.color_panel li a.theme11 {
+	background:#350608;
+}
+
+.panel_item.color_panel li a.theme12 {
+	background:#4b1706;
+}
+
+.panel_item.color_panel li a.theme13 {
+	background:#7d5e18;
+}
+
+.panel_item.color_panel li a.theme14 {
+	background:#d77624;
+}
+
+.panel_item.color_panel li a.theme15 {
+	background:#921700;
+}
+
+.panel_item.color_panel li a.theme16 {
+	background:#350608;
+}
+
+.panel_item.color_panel li a.theme17 {
+	background:#4b1706;
+}
+
+.panel_item.color_panel li a.theme18 {
+	background:#7d5e18;
+}
+
+.panel_item.color_panel li a.theme19 {
+	background:#d77624;
+}
+
+.panel_item.color_panel li a.theme20 {
+	background:#921700;
+}
+
+.panel_item.color_panel li a.theme21 {
+	background:#33458b;
 }
 
 .panel_item.layout_item a.current span,
