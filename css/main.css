@@ -193,6 +193,7 @@ html
 body	
 {
 	font-family: 'Josefin Slab', serif;
+	font-size:16px;
 	color:@content-color;
 }
 
@@ -291,7 +292,7 @@ a
 		padding-bottom:50px;
 		padding-bottom:50px;
 		color:@content-color;
-		font-size:16px;
+		font-size:18px;
 	}
 
 .about_me_info 
