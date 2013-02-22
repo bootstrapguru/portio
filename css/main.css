@@ -32,7 +32,7 @@
 	{
 		@content-bg-color: #d77f27;  
 		@content-head-color:#c0400c;
-		@content-head-text-color:darken(#c73b0b,15%);
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme3 () 	
@@ -60,14 +60,14 @@
 	{
 		@content-bg-color: #e07d28;  
 		@content-head-color:#c73b0b;
-		@content-head-text-color:darken(#c73b0b,15%);
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme7 () 
 	{
 		@content-bg-color: #f2c545;  
 		@content-head-color:#e7a136;
-		@content-head-text-color:darken(#e7a136,20%);
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme8 () 
@@ -82,7 +82,7 @@
 	{
 		@content-bg-color: #c17953;  
 		@content-head-color:#9b2f10;
-		@content-head-text-color:#ca6c4b;
+		@content-head-text-color:darken(@content-head-color,20%);
 	}
 
 .theme10 () 
