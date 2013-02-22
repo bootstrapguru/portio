@@ -65,6 +65,130 @@
 
 
 
+.panel {
+	position:fixed;
+	left:-300px;
+	top:100px;
+	width:300px;
+	display:block;
+	opacity: 1;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	z-index:999;
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-o-transition: all 400ms;		
+}
+.panel .settings {
+	position:absolute;
+	width:51px;
+	height:51px;
+	background:#3d3d3d url(../img/settings.jpg) no-repeat center;
+	display:block;
+	right:-51px;
+	top:0px;
+	z-index:999;
+}
+.panel.opacity {
+	opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.panel.show {
+	left:0px;
+}
+.panel .panel_title {
+	background:#3d3d3d;
+	padding:0 0 0 17px;
+	line-height:46px;
+	height:51px;
+	display:block;
+	color:#ffd200;
+	font-size:20px;
+	font-weight:bold;
+	text-align:left;
+}
+.panel a:hover {
+	text-decoration:none!important;
+}
+.ie8 .panel {
+	display:none!important;
+}
+.panel_item {
+	display:block;
+	background:#ececec;
+	margin:0 0 3px 0;
+}
+.panel_item.color_panel {
+	padding:20px 9px 9px 20px;
+
+}
+.color_list
+	{
+		background-color:#FFF;
+	}
+.panel_item.color_panel ul {
+	margin:0!important;
+
+}
+.panel_item.color_panel li {
+	margin:0 11px 11px 0;
+	display:inline-block;
+	float:left;
+	width:30px;
+	height:30px;
+}
+
+.panel_item.color_panel li a {
+	width:30px;
+	height:30px;
+	display:block;
+	border:#ffffff 3px solid;
+	transition: border-color 200ms;
+	-webkit-transition: border-color 200ms;
+	-moz-transition: border-color 200ms;
+	-o-transition: border-color 200ms;
+}
+.panel_item.color_panel li a.current,
+.panel_item.color_panel li a:hover {
+	border-color:#3d3d3d;
+}
+
+.panel_item.color_panel li a.color1 {
+	background:#ffd200;
+}
+.panel_item.color_panel li a.color2 {
+	background:#ff8d00;
+}
+.panel_item.color_panel li a.color3 {
+	background:#ff5b29;
+}
+.panel_item.color_panel li a.color4 {
+	background:#ff60af;
+}
+.panel_item.color_panel li a.color5 {
+	background:#b36aff;
+}
+.panel_item.color_panel li a.color6 {
+	background:#2e7cff;
+}
+.panel_item.color_panel li a.color7 {
+	background:#0ab7e1;
+}
+.panel_item.color_panel li a.color8 {
+	background:#88c800;
+}
+.panel_item.color_panel li a.color9 {
+	background:#dbe93a;
+}
+.panel_item.color_panel li a.color10 {
+	background:#a3a3a3;
+}
+
+.panel_item.layout_item a.current span,
+.panel_item.layout_item a:hover span {
+	border-color:#3d3d3d;
+}
+
 @media (max-width: 767px) {
   body {
     padding-right: 0px;

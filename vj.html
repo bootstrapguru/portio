@@ -58,6 +58,7 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/thumbGallery.js"></script>
         <script type="text/javascript" src="js/scroll.js"></script>
+        <script type="text/javascript" src="js/panel.js"></script>
         
 		<script type="text/javascript"
 		src="http://maps.googleapis.com/maps/api/js?sensor=false">
@@ -69,16 +70,7 @@
 				jQuery(function() {
 					jQuery('ul.da-thumbs > li').hoverdir();
 				});
-				$('#avatar').click(function(){
-				var stylesheetFile = 'file.css';
-					var link  = document.createElement('link');
-					link.rel  = "stylesheet";
-					link.type = "text/less";
-					link.href = stylesheetFile;
-					less.sheets.push(link);
-				less.refresh();
-				});
-			
+				
 			});
 		</script>
 		
@@ -209,7 +201,7 @@
                                                 <li><a href="#"><i class="icon-github icon-3x"></i></a></li>
                                                 <li><a href="#"><i class="icon-pinterest-sign icon-3x"></i></a></li>
                                                 
-                                            </ul>
+											</ul>
 											
 										</div>
 									</div>
@@ -533,6 +525,20 @@
 							return false;
 						});
 					</script>
-					
-	</body>
-</html>												
+                    
+                   <div class="panel_item color_panel">
+                   <ul class="color_list"><li class="color_item"></li>
+                       <li class="color_item"><a class="color2" rel="color-orange" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color3" rel="color-red" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color4" rel="color-pink" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color5" rel="color-violet" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color6" rel="color-ceruleum" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color7" rel="color-blue" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color8" rel="color-green" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color9" rel="color-yellowgreen" href="javascript:void(0)"></a></li>
+                       <li class="color_item"><a class="color10" rel="color-grey" href="javascript:void(0)"></a></li>
+                   </ul>
+                   <div class="clear"></div><div/>
+                   
+					</body>
+	</html>														
