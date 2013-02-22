@@ -192,7 +192,7 @@ html
 
 body	
 {
-	font-family:"Geogrotesque-SemiBold",Helvetica,Arial,sans-serif;
+	font-family: 'Josefin Slab', serif;
 	color:@content-color;
 }
 
