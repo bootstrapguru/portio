@@ -19,7 +19,7 @@
 /* .customTheme(#696969,#3f3e3e); */
 
 .customTheme(#9d261d,#F56);
-.theme12();
+.theme3();
 
 .theme1 () 
 	{
@@ -305,7 +305,15 @@ h2 small
 		color:#FFF;
 		text-decoration:none;
 	}
-
+#about_me .social li a
+	{
+		color:@content-color;
+		
+		&:hover
+			{
+				color:@content-head-color;
+			}
+	}
 #portfolio_container
 	{
 		margin-top:100px;
@@ -337,7 +345,7 @@ input[type="text"]
 		 width: 250px;
 		 background: none;
 		 border: none;
-		 border-bottom: 1px solid @content-color;
+		 border-bottom: 1px sod @content-color;
 		 padding: 10px 5px;
 		 margin: 0px 85px 0 0;
 		 color: @content-color;
