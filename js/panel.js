@@ -1,4 +1,4 @@
-
+/*This is only for demo purpose. */
 $(document).ready(function(){
 	//Start Control Panel Script
 	$('body').append('<div class="panel opacity show"><a href="javascript:void(0)" class="settings"></a><span class="panel_title">Theme Switcher</span></div>');

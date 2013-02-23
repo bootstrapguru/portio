@@ -1,3 +1,4 @@
+/*This code helps for smoth scrolling of pages to a specific div*/
 $(document).ready(function() {
   function filterPath(string) {
   return string
