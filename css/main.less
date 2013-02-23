@@ -1,37 +1,39 @@
+//Importing the bootstrap resources
 @import 'less/bootstrap';
 @import 'less/responsive';
 
 /*Default theme is theme2*/
-@content-bg-color: #d77f27;
-@content-head-color:#c0400c; 
-@content-color:#FFF;
-@head-text-color:#FFF;
-@content-head-hover-color:lighten(@content-head-color, 6%);
-@content-head-text-color:darken(#c73b0b,25%);
-@content-head-hover-duration:500ms;
-@profile-img-border:#e6e6e6;
-@link-color:#787875;
-@link-hover-color:#ccc;
+@content-bg-color: #d77f27;    //-------------------------------------------------Content background color can be changed here.
+@content-head-color:#c0400c;   //-------------------------------------------------Content head color can be changed here.
+@content-color:#FFF;           //-------------------------------------------------Content color can be changed here.
+@head-text-color:#FFF;         //-------------------------------------------------Content color on the header part i.e. on the map block  can be changed here.
+@content-head-hover-color:lighten(@content-head-color, 6%);  //-------------------Title header background on hover , can be changed here . you can change lighten(@content-head-color, 6%) to #colorCode
+@content-head-text-color:darken(#c73b0b,25%); //----------------------------------Content color on the header part i.e. on the map block  can be changed here.
+@profile-img-border:#e6e6e6;  //--------------------------------------------------This is for the border of the image on about me block
+@link-color:#787875;  //----------------------------------------------------------Link colors through out the website
+@link-hover-color:#ccc;  //-------------------------------------------------------Link hover color through out the website 
 
 /* Feature Circle properties */
-@feature-circle-bgColor:@content-bg-color; /* #42a2ce; */
-@feature-circle-titleColor:#fff;
-@feature-circle-textColor:#000;
-@feature-circle-linkColor:#42a2ce;
+@feature-circle-bgColor:@content-bg-color; //------------------------------------Or define your own color by changing @content-bg-color to #42a2ce; 
+@feature-circle-titleColor:#fff;  //---------------------------------------------Feature circle title color can be changed here
+@feature-circle-textColor:#000;  //----------------------------------------------The text color at the bottom of the feature crcles can be changed here
+@feature-circle-linkColor:#42a2ce; //--------------------------------------------The color of the link at the bottom of the feature circles can be changed here
 
 /* .customTheme(#696969,#3f3e3e);
 .customTheme(#282827,#E25D33); 
 .customTheme(#dc168f,#9a165a); */
 .customTheme(#282827,#a90cb0); /* Default theme */
 
-.customTheme(#282827,#f05f5f);
+.customTheme(#282827,#f05f5f); /* ----------------------------------------------copy any lines from the top and then replace with this lines, so that changes the entire theme.
+																				or just use .theme1(); or .theme()2; to use predefined themes. You can pass two values in between this function also */
+
 
 .theme1 () 
 	{
  		@content-bg-color: #42a2ce;  
 		@content-head-color:#6c4b88;
 		@content-head-text-color:darken(@content-head-color,20%);
-		.scrollbar()
+		
 	}
 
 .theme2 () 	
@@ -39,7 +41,7 @@
 		@content-bg-color: #d77f27;  
 		@content-head-color:#c0400c;
 		@content-head-text-color:darken(@content-head-color,20%);
-		.scrollbar()
+		
 	}
 
 .theme3 () 	
@@ -224,7 +226,7 @@ a
 
 .brand h1 
 	{
-		font-family: 'Lato', sans-serif;
+		   font-family: 'Corben', Georgia, Times, serif;
 		font-weight:bold;
 	}
 #map_canvas 

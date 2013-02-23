@@ -64,6 +64,14 @@
 }
 
 
+@media (max-width: 767px) {
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+
+/* This part is only for demo purpose to show color switcher. You can remove from here in your production site */
 
 .panel {
 	position:fixed;
@@ -244,9 +252,3 @@
 .panel_item.layout_item a:hover span {
 	border-color:#3d3d3d;
 }
-
-@media (max-width: 767px) {
-  body {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
