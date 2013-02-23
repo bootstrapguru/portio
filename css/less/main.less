@@ -1,35 +1,31 @@
+//Importing the bootstrap resources
 @import 'bootstrap';
 @import 'responsive';
 
 /*Default theme is theme2*/
-@content-bg-color: #d77f27;
-@content-head-color:#c0400c; 
-@content-color:#FFF;
-@head-text-color:#FFF;
-@content-head-hover-color:lighten(@content-head-color, 6%);
-@content-head-text-color:darken(#c73b0b,25%);
-@content-head-hover-duration:500ms;
-@profile-img-border:#e6e6e6;
-@link-color:#787875;
-@link-hover-color:#ccc;
+@content-bg-color: #d77f27;    //-------------------------------------------------Content background color can be changed here.
+@content-head-color:#c0400c;   //-------------------------------------------------Content head color can be changed here.
+@content-color:#FFF;           //-------------------------------------------------Content color can be changed here.
+@head-text-color:#FFF;         //-------------------------------------------------Content color on the header part i.e. on the map block  can be changed here.
+@content-head-hover-color:lighten(@content-head-color, 6%);  //-------------------Title header background on hover , can be changed here . you can change lighten(@content-head-color, 6%) to #colorCode
+@content-head-text-color:darken(#c73b0b,25%); //----------------------------------Content color on the header part i.e. on the map block  can be changed here.
+@profile-img-border:#e6e6e6;  //--------------------------------------------------This is for the border of the image on about me block
+@link-color:#787875;  //----------------------------------------------------------Link colors through out the website
+@link-hover-color:#ccc;  //-------------------------------------------------------Link hover color through out the website 
 
 /* Feature Circle properties */
-@feature-circle-bgColor:@content-bg-color; /* #42a2ce; */
-@feature-circle-titleColor:#fff;
-@feature-circle-textColor:#000;
-@feature-circle-linkColor:#42a2ce;
+@feature-circle-bgColor:@content-bg-color; //------------------------------------Or define your own color by changing @content-bg-color to #42a2ce; 
+@feature-circle-titleColor:#fff;  //---------------------------------------------Feature circle title color can be changed here
+@feature-circle-textColor:#000;  //----------------------------------------------The text color at the bottom of the feature crcles can be changed here
+@feature-circle-linkColor:#42a2ce; //--------------------------------------------The color of the link at the bottom of the feature circles can be changed here
 
-/* .customTheme(#696969,#3f3e3e);
-.customTheme(#282827,#E25D33); 
-.customTheme(#dc168f,#9a165a); */
-.customTheme(#282827,#a90cb0); /* Default theme */
-
+/*Themes are defined here */
 .theme1 () 
 	{
  		@content-bg-color: #42a2ce;  
 		@content-head-color:#6c4b88;
 		@content-head-text-color:darken(@content-head-color,20%);
-		.scrollbar()
+		
 	}
 
 .theme2 () 	
@@ -37,7 +33,7 @@
 		@content-bg-color: #d77f27;  
 		@content-head-color:#c0400c;
 		@content-head-text-color:darken(@content-head-color,20%);
-		.scrollbar()
+		
 	}
 
 .theme3 () 	
@@ -188,13 +184,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.scrollbar() {
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: @content-head-color; }
-::-webkit-scrollbar-thumb {  background: #FFF; }
-
-}
-
+/*Main css properties starts here */
 html	
 {
 	margin:0px;
@@ -228,9 +218,10 @@ a
 
 .brand h1 
 	{
-		font-family: 'Lato', sans-serif;
+		   font-family: 'Corben', Georgia, Times, serif;
 		font-weight:bold;
 	}
+	
 #map_canvas 
 	{
 		 width:100%; height:100%; z-index: 0;
@@ -345,7 +336,15 @@ h2 small
 	{
 		margin-top:100px;
 	}
-
+.btn-custom
+	{
+		background-color:@content-bg-color;
+		border:none;
+		color:@content-color;
+		padding:10px 30px;
+		font-size:18px;
+		border-radius:4px;
+	}
 .contact_me 
 	{
 		background: @content-bg-color !important; 
@@ -396,7 +395,6 @@ input[type="text"]:focus
 .copyrights li
 	{
 		color:@link-color;
-		padding-left:50px;
 	}
 /*  Circles */
 
@@ -452,4 +450,52 @@ span.zoom
 
 /*polishing weird scroll bar we have  */
 
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: @content-head-color; }
+::-webkit-scrollbar-thumb {  background: #FFF; }
+
+
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/* End: Recommended Isotope styles */
 

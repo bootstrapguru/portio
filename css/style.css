@@ -14,7 +14,8 @@
 	transition: all 400ms;
 	-webkit-transition: all 400ms;
 	-moz-transition: all 400ms;
-	-o-transition: all 400ms;		
+	-o-transition: all 400ms;
+	
 }
 .panel .settings {
 	position:absolute;
