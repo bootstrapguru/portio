@@ -97,7 +97,7 @@ margin-left:10px;
 }
 
 .portfolio_2col article h3{
-padding-top:50px !important;
+padding-top:70px !important;
 }
 
 /* Image Grid */
@@ -124,15 +124,25 @@ padding-top:50px !important;
 /* Mobile landscape width 320 */
 @media only screen and (max-width: 767px) {
 
-.image_grid{
-width:300px;
+.image_grid
+	{
+		width:300px;
+	}
+
+.image_grid li img
+	{
+		width:150px;
+	}
+
+.portfolio_2col article h3{
+padding-top:0px !important;
 }
 
-.image_grid li img{
-width:150px;
-
+.da-thumbs li  article h3{
+color:#fff;
+padding-top:0px;
+font-size:18px;
 }
-
 
 }
 
