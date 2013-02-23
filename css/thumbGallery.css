@@ -97,14 +97,13 @@ margin-left:10px;
 }
 
 .portfolio_2col article h3{
-padding-top:70px !important;
+padding-top:50px !important;
 }
 
 /* Image Grid */
 .image_grid {
 	float:left;
 	overflow:hidden;
-	width:700px;
 	position:relative;
 
 }
@@ -119,4 +118,23 @@ padding-top:70px !important;
 	margin-right:23px;
 	text-align:center;
 }
+
+
+/* Responsive image grid*/
+/* Mobile landscape width 320 */
+@media only screen and (max-width: 767px) {
+
+.image_grid{
+width:300px;
+}
+
+.image_grid li img{
+width:150px;
+
+}
+
+
+}
+
+
 

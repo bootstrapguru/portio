@@ -16,10 +16,8 @@
 		<![endif]-->
 		
 		<!-- Css StyleSheets -->
-		<link  href="css/bootstrap.css" rel="stylesheet" media="screen"/>
-        
-		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"/>
-        
+		 <link rel="stylesheet/less" href="css/main.less" type="text/css" />
+		 
         
 		<link href="css/style.css" rel="stylesheet" media="screen"/>
         <link rel="stylesheet"  href="css/circles.css" rel="stylesheet" media="screen"/>
@@ -34,7 +32,7 @@
         <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
 		
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet/less" href="css/main.css" type="text/css" />
+        
 		
         <script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/less.js"></script>	
@@ -150,11 +148,11 @@
 				<h1 > My portfolio  <a href="#top" class="pull-right"> <i class="icon-arrow-up "></i></a> </h1>
 				<div class="row-fluid">
 				<div id="filters" >
-					<button type="button" class="btn btn-filter" data-toggle="button" data-filter="*" >show all</button>
-					<button type="button"  class="btn btn-filter"  data-toggle="button" data-filter=".some">Some</button>
-					<button type="button"  class="btn btn-filter" data-toggle="button" data-filter=".four">Four</button>
-					<button type="button"  class="btn btn-filter" data-toggle="button" data-filter=":not(.some)">Not some</button>
-					<button type="button"   class="btn btn-filter" data-toggle="button" data-filter=":not(.four)">Not Four</button>
+					<button type="button" class="btn-custom" data-toggle="button" data-filter="*" >show all</button>
+					<button type="button" class="btn-custom" data-toggle="button" data-filter=".some">Some</button>
+					<button type="button"  class="btn-custom" data-toggle="button" data-filter=".four">Four</button>
+					<button type="button"  class="btn-custom" data-toggle="button" data-filter=":not(.some)">Not some</button>
+					<button type="button"   class="btn-custom" data-toggle="button" data-filter=":not(.four)">Not Four</button>
 				</div>
 				</div>
 			</div>
@@ -166,7 +164,7 @@
 					
 					<div class="image_grid span12">
 					
-						<ul  id="container" class="portfolio_list da-thumbs">
+						<ul  id="container" class="portfolio_list da-thumbs ">
 							<li class="element some four">
 								<img src="img/gallery/theme1.png"  alt="img" />
 								<article class="da-animate da-slideFromRight" style="display: block;">
@@ -363,9 +361,9 @@
 					<div class="row-fluid text-center">
 						<form  class="form-horizontal">
 							<ul class="inline "><li>
-							<input type="text" id="inputEmail" placeholder="First Name" > </li>
-							<li><input type="text" id="inputEmail" placeholder="Email" ></li>
-							<li><input type="text" id="inputEmail" class="input-large" placeholder="welcome to write here anything" ></li>
+							<input type="text"  id="first_name" placeholder="First Name" > </li>
+							<li><input type="text" id="email" placeholder="Email" ></li>
+							<li><input type="text" id="message" class="input-large" placeholder="welcome to write here anything" ></li>
 							<li><button type="submit" class="submit">Send <i class="icon-envelope-alt"></i> </button></li>
 							</ul>
 						</form>
@@ -436,7 +434,7 @@
 					</div>    </div>
 					
 					<br /><br /><br />
-					<div class="copyrights text-center"> <ul class="inline"><li>	Copyright ©2013 bootStrapGuru  </li><li> Powered by bootStrapGuru  </li><li> Theme designed by bootStrapGuru </li></ul></div>  
+					<div class="copyrights text-center"> <ul class="inline"><li>	Copyright ©2013 bootStrapGuru  </li><li> Powered by <a href="#">bootStrapGuru</a>  </li><li> Theme designed by bootStrapGuru </li></ul></div>  
 			</div>
 			
 			

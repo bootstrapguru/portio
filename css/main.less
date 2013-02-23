@@ -24,6 +24,8 @@
 .customTheme(#dc168f,#9a165a); */
 .customTheme(#282827,#a90cb0); /* Default theme */
 
+.customTheme(#282827,#f05f5f);
+
 .theme1 () 
 	{
  		@content-bg-color: #42a2ce;  
@@ -188,12 +190,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.scrollbar() {
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: @content-head-color; }
-::-webkit-scrollbar-thumb {  background: #FFF; }
-
-}
 
 html	
 {
@@ -345,7 +341,15 @@ h2 small
 	{
 		margin-top:100px;
 	}
-
+.btn-custom
+	{
+		background-color:@content-bg-color;
+		border:none;
+		color:@content-color;
+		padding:10px 30px;
+		font-size:18px;
+		border-radius:4px;
+	}
 .contact_me 
 	{
 		background: @content-bg-color !important; 
@@ -396,7 +400,6 @@ input[type="text"]:focus
 .copyrights li
 	{
 		color:@link-color;
-		padding-left:50px;
 	}
 /*  Circles */
 
@@ -453,3 +456,6 @@ span.zoom
 /*polishing weird scroll bar we have  */
 
 
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: @content-head-color; }
+::-webkit-scrollbar-thumb {  background: #FFF; }
