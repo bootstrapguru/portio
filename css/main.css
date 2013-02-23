@@ -7,7 +7,7 @@
 @content-head-text-color:darken(#c73b0b,25%);
 @content-head-hover-duration:500ms;
 @profile-img-border:#e6e6e6;
-@link-color:#000;
+@link-color:#787875;
 @link-hover-color:#ccc;
 
 /* Feature Circle properties */
@@ -16,9 +16,11 @@
 @feature-circle-textColor:#000;
 @feature-circle-linkColor:#42a2ce;
 
-/* .customTheme(#696969,#3f3e3e); */
+/* .customTheme(#696969,#3f3e3e);
+.customTheme(#282827,#E25D33); 
+.customTheme(#dc168f,#9a165a); */
+.customTheme(#282827,#f05f5f);
 
-.theme2();
 
 .theme1 () 
 	{
@@ -201,6 +203,7 @@ body
 	font-family: 'Josefin Slab', serif;
 	font-size:16px;
 	color:@content-color;
+	
 }
 
 a
@@ -265,7 +268,6 @@ a
 		text-shadow: 0 1px 0 rgba(255,255,255,.2);
 		font-family: 'Open Sans', sans-serif;
 		font-weight:bold;
-		font-style:italic;
 		font-size: 2.3em; 
 		&:hover 
 			{
@@ -279,7 +281,7 @@ a
 
 	}	
 	
-.head_info { top:100px; font-family: 'BebasNeueRegular'; z-index: 2; position: absolute;  text-align: center; color: @head-text-color; margin:0px auto; }
+.head_info { top:100px; z-index: 2; position: absolute;  text-align: center; color: @head-text-color; margin:0px auto; }
 
 .head_info a { text-decoration:none; color: @head-text-color; padding-left:25px; padding-right:25px; width:50px; }
 
@@ -360,8 +362,9 @@ h2 small
 		background-color:@content-head-hover-color;
 		border:none;
 		color:#FFF;
-		padding:15px 30px;
+		padding:10px 30px;
 		font-size:18px;
+		border-radius:4px;
 	}
 	
 input[type="text"]
@@ -405,6 +408,7 @@ input[type="text"]:focus
 .ch-info p 
 	{
 		color: @feature-circle-textColor;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	
 .ch-info p a 

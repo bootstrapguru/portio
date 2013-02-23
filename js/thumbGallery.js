@@ -1,3 +1,11 @@
+/* Following block works for the portfolio image hover */
+jQuery(document).ready(function(){
+				jQuery(function() {
+					jQuery('ul.da-thumbs > li').hoverdir();
+				});
+				
+			});
+			
 (function( $, undefined ) {
 		
 	/*
