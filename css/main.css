@@ -19,8 +19,9 @@
 /* .customTheme(#696969,#3f3e3e);
 .customTheme(#282827,#E25D33); 
 .customTheme(#dc168f,#9a165a); */
-.customTheme(#282827,#f05f5f);
+.customTheme(#282827,#a90cb0); /* Default theme */
 
+.customTheme(#282827,#f05f5f);
 
 .theme1 () 
 	{
@@ -343,6 +344,16 @@ h2 small
 	{
 		margin-top:100px;
 	}
+	
+#portfolio_container button
+	{
+		background-color: #000;
+		background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+		background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+		background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+		background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	}
 
 .contact_me 
 	{
@@ -361,7 +372,7 @@ h2 small
 	{
 		background-color:@content-head-hover-color;
 		border:none;
-		color:#FFF;
+		color:@content-bg-color;
 		padding:10px 30px;
 		font-size:18px;
 		border-radius:4px;
@@ -387,7 +398,10 @@ input[type="text"]:focus
 		text-indent: 5px; 
   	}
 
-
+.twitter
+	{
+		color:#1ab2e8;
+	}
 .copyrights li
 	{
 		color:@link-color;
