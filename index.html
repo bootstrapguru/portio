@@ -31,92 +31,38 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
 		<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
-		<style>
-		.slide-up-boxes li { 
-			display: block; 
-			height: 250px; 
-			background: rgba(215, 215, 215, 0.5); 
-			border: 1px solid #ccc; 
-			height: 125px; 
-			overflow: hidden; 
-		}
-		
-		.slide-up-boxes .topbox { 
-			color: #FFF; 
-			height: 125px; 
-			font: 12px/15px Georgia, Serif;
-			    /* Vertically center text by making line height equal to height */
-			 opacity: 1;
-			 -webkit-transition: all 0.2s linear; 
-			 -moz-transition: all 0.2s linear; 
-			 -o-transition: all 0.2s linear;
-		}
-		
-		.slide-up-boxes li:hover .topbox { 
-			margin-top: -125px; 
-			opacity: 0; 
-		}
-		
-		.slide-up-boxes li  .bottombox { 
-			position: relative; 
-			color: white; 
-			font: 12px/15px Georgia, Serif;
-			height: 125px; 
-			opacity: 0; 
-			-webkit-transform: rotate(6deg); 
-			-webkit-transition: all 0.4s linear; 
-			-moz-transform: rotate(6deg); 
-			-moz-transition: all 0.4s linear; 
-			-o-transform: rotate(6deg); 
-			-o-transition: all 0.4s linear; 
-		}
-		.slide-up-boxes li:hover .bottombox { 
-			opacity: 1; 
-			-webkit-transform: rotate(0); 
-			-moz-transform: rotate(0); 
-			-o-transform: rotate(0); 
-		}
-		
-article, aside, figure, footer, header, hgroup,
-menu, nav, section { display: block; }
-a { text-decoration: none; }
-	</style>
+
 		<!-- We load less js file here so that css is generated before the page loads-->
         <script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/less.js"></script>
-         <script type="text/javascript" src="js/raphael.2.1.0.min.js"></script>
-        <script type="text/javascript" src="js/justgage.1.0.1.js"></script>
-        <script type="text/javascript" src="js/countdown.js"></script>
-		
+      
 	</head>
 	
 	<body>
-   	<div class="container">
-    	<div class="row-fluid">
-        	<div class="span12">
-				<div class="span3 days">
-                    <div id="dayss">
+    <div class="header text-center">
+			<div class="container-fluid">
+                <div class="row-fluid">
+               	
+                    <h1 style="font-size:150px; color:#FFF"><i class="icon-thumbs-up"></i></h1>
+                     <h1 class="title">Metro Style Subscribe Page or Coming Soon</h1>
+                     <BR />
+                     <h3>Get notified by subscribing to our mailing list</h3>
+                    <br />            <br />            
+                   </div>
+                   <div class="row-fluid">
+                    <div class="span12">
+                            <div >
+                              <input  id="email" name="email" placeholder="Enter your email id to get invitation" type="text">
+                              <button  type="button">Subscribe</button>
+                            </div>
                     </div>
-      			</div>
-                <div class="span3 hours">
-        		 <div id="hourss">
-                    </div>
-		        </div>
-                <div class="span3 minutes">
-        		 <div id="minutess">
-                    </div>
-		        </div>
-                <div class="span3 seconds">
-        		 <div id="secondss">
-                    </div>
-		        </div>
-                
             </div>
-        </div>
+           </div>
+   	</div>
        
 
 
-        <br /><br /><br /><br /><br />
+        <br /><br />
         <br /><br /><br /><br /><br />
            	<div class="container">
     	<div class="row-fluid">
@@ -124,20 +70,20 @@ a { text-decoration: none; }
 				<ul class="slide-up-boxes inline">
 
             <li class="span3 tile">
-				<div class="topbox" > <i class="icon-facebook icon-4x"> </i> <p> Some data to be written here to cover up the space which is meaning less or a story </p>  </div>
-				<div  class="bottombox green"  >Quotes on Design is a collection of design related quotes. With an API for your integration ideas!</div>				
+				<div class="topbox blue" > <i class="icon-tablet icon-4x"> </i> <p> Clean and responsive design. Looks great on all devices </p>  </div>
+				<div  class="bottombox "  >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</div>				
 			</li>
             <li class="span3 tile">
-				<div class="topbox" > <i class="icon-facebook icon-4x"></i></div>
-				<div  class="bottombox green"  >Quotes on Design is a collection of design related quotes. With an API for your integration ideas!</div>				
+				<div class="topbox green" > <i class="icon-bolt icon-4x"></i><p>Thunder speed to change theme. Used less css variables</p></div>
+				<div  class="bottombox"  > Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</div>				
 			</li>
             <li class="span3 tile">
-				<div class="topbox" > <i class="icon-facebook icon-4x"></i></div>
-				<div  class="bottombox"  >Quotes on Design is a collection of design related quotes. With an API for your integration ideas!</div>				
+				<div class="topbox pink" > <i class="icon-file-alt icon-4x"></i><p>Full documentation provided to edit template </p></div>
+				<div  class="bottombox"  >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</div>				
 			</li>
             <li class="span3 tile">
-				<div class="topbox" > <i class="icon-facebook icon-4x"></i></div>
-				<div  class="bottombox"  >Quotes on Design is a collection of design related quotes. With an API for your integration ideas!</div>				
+				<div class="topbox lightblue" > <i class="icon-th icon-4x"></i><p> Metro Style tiles. Can be also used to describe features</p></div>
+				<div  class="bottombox "  >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</div>				
 			</li>
 		</ul>
                 
@@ -145,14 +91,7 @@ a { text-decoration: none; }
         </div>
        
 
-    	<div class="row-fluid">
-        	<div class="span6 offset4">
-					<div class="input-append">
-                      <input class="span12" id="email" name="email" type="text">
-                      <button class="btn" type="button">Send</button>
-                    </div>
-            </div>
-        </div>
+    
     </div>
 
 
@@ -160,5 +99,10 @@ a { text-decoration: none; }
 		
 		<!-- javaScript -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" >
+        $(document).ready(function(e) {
+            $('.social-icons li a').tooltip('hide');  //tooltip for the navigation menu
+        });
+        </script>
 	</body>
 </html>																					
