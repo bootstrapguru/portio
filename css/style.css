@@ -197,3 +197,64 @@
 	}
   
 }
+
+
+@charset "utf-8";
+/* CSS Document */
+
+html
+	{
+	height:100%;
+	}
+
+body
+	{
+		padding-top:3%;
+		background:#448bb4;	
+		
+	}
+	
+
+#dayss, #hourss, #minutess, #secondss
+	{
+		width:200px; height:160px;
+		display: inline-block;
+		margin: 1em;
+		color:white;
+
+     }
+
+.social
+	{
+		font-size:120px;
+	}
+	
+
+.form_title{
+    display: inline-block;
+    list-style: none outside none;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.form_title li
+	{
+		display:inline;
+	}
+	
+.footer_links{
+    display: inline-block;
+    list-style: none outside none;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.footer_links li
+	{
+		display:inline;
+	}
+
+.footer_links li a
+	{
+		text-decoration:none;
+	}
