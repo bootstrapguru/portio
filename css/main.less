@@ -1,0 +1,509 @@
+//Importing the bootstrap resources
+@import 'less/bootstrap';
+@import 'less/responsive';
+
+/*Default theme is theme2*/
+@content-bg-color: #d77f27;    //-------------------------------------------------Content background color can be changed here.
+@content-head-color:#c0400c;   //-------------------------------------------------Content head color can be changed here.
+@content-color:#FFF;           //-------------------------------------------------Content color can be changed here.
+@head-text-color:#FFF;         //-------------------------------------------------Content color on the header part i.e. on the map block  can be changed here.
+@content-head-hover-color:lighten(@content-head-color, 6%);  //-------------------Title header background on hover , can be changed here . you can change lighten(@content-head-color, 6%) to #colorCode
+@content-head-text-color:darken(#c73b0b,25%); //----------------------------------Content color on the header part i.e. on the map block  can be changed here.
+@profile-img-border:#e6e6e6;  //--------------------------------------------------This is for the border of the image on about me block
+@link-color:#787875;  //----------------------------------------------------------Link colors through out the website
+@link-hover-color:#ccc;  //-------------------------------------------------------Link hover color through out the website 
+
+/* Feature Circle properties */
+@feature-circle-bgColor:@content-bg-color; //------------------------------------Or define your own color by changing @content-bg-color to #42a2ce; 
+@feature-circle-titleColor:#fff;  //---------------------------------------------Feature circle title color can be changed here
+@feature-circle-textColor:#000;  //----------------------------------------------The text color at the bottom of the feature crcles can be changed here
+@feature-circle-linkColor:#42a2ce; //--------------------------------------------The color of the link at the bottom of the feature circles can be changed here
+
+/* .customTheme(#696969,#3f3e3e);
+.customTheme(#282827,#E25D33); 
+.customTheme(#dc168f,#9a165a); 
+.customTheme(#282827,#a90cb0); */
+
+.customTheme(#282827,#f05f5f); /* ----------------Default theme-----------------copy any lines from the top and then replace with this lines, so that changes the entire theme.
+																				or just use .theme1(); or .theme()2; to use predefined themes. You can pass two values in between this function also */
+
+/*Themes are defined here */
+.theme1 () 
+	{
+ 		@content-bg-color: #42a2ce;  
+		@content-head-color:#6c4b88;
+		@content-head-text-color:darken(@content-head-color,20%);
+		
+	}
+
+.theme2 () 	
+	{
+		@content-bg-color: #d77f27;  
+		@content-head-color:#c0400c;
+		@content-head-text-color:darken(@content-head-color,20%);
+		
+	}
+
+.theme3 () 	
+	{
+		@content-bg-color: #90d676;  
+		@content-head-color:#278a15;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+	
+.theme4 () 	
+	{
+		@content-bg-color: #978e4f;  
+		@content-head-color:#594f1b; 
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+	
+.theme5 () 	
+	{
+		@content-bg-color: #974f5d;  
+		@content-head-color:#591b23; 
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme6 () 
+	{
+		@content-bg-color: #e07d28;  
+		@content-head-color:#c73b0b;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme7 () 
+	{
+		@content-bg-color: #f2c545;  
+		@content-head-color:#e7a136;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme8 () 
+	{
+		@content-bg-color: #bcbd84;  
+		@content-head-color:#978e43;
+		@content-head-text-color:darken(@content-head-color,20%);
+		
+	}
+
+.theme9 () 
+	{
+		@content-bg-color: #c17953;  
+		@content-head-color:#9b2f10;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme10 () 
+	{
+		@content-bg-color: #c13f47;  
+		@content-head-color:#731115;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme11 () 
+	{
+		@content-bg-color: #731115;  
+		@content-head-color:#350608;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme12 () 
+	{
+		@content-bg-color: #9b2f10;  
+		@content-head-color:#4b1706;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme13 () 
+	{
+		@content-bg-color: #978e43;  
+		@content-head-color:#7d5e18;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme14 () 
+	{
+		@content-bg-color: #e7a136;  
+		@content-head-color:#d77624;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme15 () 
+	{
+		@content-bg-color: #c73b0b;  
+		@content-head-color:#921700;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme16 () 
+	{
+		@content-bg-color: #c13f47;  
+		@content-head-color:#350608;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme17 () 
+	{
+		@content-bg-color: #c17953;  
+		@content-head-color:#4b1706;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme18 () 
+	{
+		@content-bg-color: #bcbd84;  
+		@content-head-color:#7d5e18;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme19 () 
+	{
+		@content-bg-color: #f2c545;  
+		@content-head-color:#d77624;
+		@content-head-text-color:darken(#c73b0b,25%);
+	}
+
+.theme20 () 
+	{
+		@content-bg-color: #e07d28;  
+		@content-head-color:#921700;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.theme21 () 
+	{
+		@content-bg-color: #7285bc;  
+		@content-head-color:#33458b;
+		@content-head-text-color:darken(@content-head-color,20%);
+	}
+
+.customTheme(@bg-color, @head-color)
+	{
+		@content-bg-color: @bg-color;  
+		@content-head-color: @head-color;
+	}
+
+.transition() {
+	background-color: @content-head-hover-color;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Main css properties starts here */
+html	
+{
+	margin:0px;
+}
+
+body	
+{
+	font-family: 'Josefin Slab', serif;
+	font-size:16px;
+	color:@content-color;
+	
+}
+
+a
+	{
+		color:@link-color;
+		&:hover
+		{
+			text-decoration:none;
+			color:@link-hover-color;	 
+		}	
+	}
+
+.header
+	{
+		height:500px;
+		background: @content-bg-color !important; 
+		margin-top:0px;
+	
+	}
+
+.brand h1 
+	{
+		   font-family: 'Corben', Georgia, Times, serif;
+		font-weight:bold;
+	}
+	
+#map_canvas 
+	{
+		 width:100%; height:100%; z-index: 0;
+	}
+	
+.mapCont { 
+			@grayscaled:grayscale(100%);
+			display: block;
+			height:500px; 
+			width:100%; 
+			top:0;
+			left:0;
+			z-index: 0;
+			opacity: .15;
+			filter: @grayscaled;
+			-webkit-filter: @grayscaled;
+			-moz-filter: @grayscaled;
+			-ms-filter: @grayscaled;
+			-o-filter: @grayscaled;
+		
+		&:hover
+			{
+				opacity: 0.6;
+			}
+		
+		}
+
+.title_bg
+	{
+		text-align:center;
+		background-color:@content-head-color;
+		text-transform:uppercase;
+		border-top:4px solid @content-head-color;
+		margin:0px auto;
+		padding:15px;
+		color:@content-head-text-color;
+		text-shadow: 0 1px 0 rgba(255,255,255,.2);
+		font-family: 'Open Sans', sans-serif;
+		font-weight:bold;
+		font-size: 2.3em; 
+		&:hover 
+			{
+				.transition();
+			}
+		a
+			{
+				text-decoration:none;
+				color:#FFF;
+			}
+
+	}	
+	
+.head_info { top:100px; z-index: 2; position: absolute;  text-align: center; color: @head-text-color; margin:0px auto; }
+
+.menu li a { text-decoration:none; position:relative; color: @head-text-color; padding-left:10px; padding-right:10px; width:50px; }
+
+.avatar
+	{
+		width:150px;
+		height:150px;
+		border:8px solid #FFF;
+		
+	}
+	
+.about_me 
+	{
+		background: @content-bg-color !important; 
+		margin-top:50px;
+		padding-bottom:50px;
+		padding-bottom:50px;
+		color:@content-color;
+		font-size:18px;
+	}
+
+.about_me_info 
+	{
+		padding-top:50px;
+	}	
+
+.about_me_info .tagline
+	{
+		font-family: 'Josefin Slab', serif;
+
+	}	
+
+
+.about_me_info  img
+	{
+		border:4px solid @profile-img-border;
+		border-radius:50%;
+	}
+
+h2 small 	
+	{
+		color: @profile-img-border;
+	}
+.about_me a.top, .about_me a.top:hover, .contact_me  a.top,.contact_me  a.top:hover, #portfolio_container a.top,#portfolio_container a.top:hover
+	{
+		color:#FFF;
+		text-decoration:none;
+	}
+#about_me .social li a
+	{
+		color:@content-color;
+		
+		&:hover
+			{
+				color:@content-head-color;
+			}
+	}
+#portfolio_container
+	{
+		margin-top:100px;
+	}
+.btn-custom
+	{
+		background-color:@content-bg-color;
+		border:none;
+		color:@content-color;
+		padding:10px 30px;
+		font-size:18px;
+		border-radius:4px;
+	}
+.contact_me 
+	{
+		background: @content-bg-color !important; 
+		margin-top:50px;
+		padding-bottom:50px;
+		color:@content-color;
+	}
+	
+.form-horizontal
+	{
+		margin-top:50px;
+	}
+
+.form-horizontal button
+	{
+		background-color:@content-head-hover-color;
+		border:none;
+		color:@content-bg-color;
+		padding:10px 30px;
+		font-size:18px;
+		border-radius:4px;
+	}
+	
+input[type="text"]
+	 {
+		 width: 250px;
+		 background: none;
+		 border: none;
+		 border-bottom: 1px solid @content-color;
+		 padding: 10px 5px;
+		 margin: 0px 85px 0 0;
+		 color: @content-color;
+		 font-size: 16px;
+	}
+	
+input[type="text"]:focus 
+	{
+		outline:none;
+		border: none;
+		border-left: 1px solid @content-color;
+		text-indent: 5px; 
+  	}
+
+.twitter
+	{
+		color:#1ab2e8;
+	}
+.copyrights li
+	{
+		color:@link-color;
+	}
+/*  Circles */
+
+.ch-info 
+	{
+		background: @feature-circle-bgColor;
+	}
+	
+.ch-info h3
+	
+	{
+		color: @feature-circle-titleColor;
+	}
+
+.ch-info p 
+	{
+		color: @feature-circle-textColor;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+.ch-info p a 
+	{
+		color: @feature-circle-linkColor;
+	}
+
+/* thumb Gallery */
+
+.da-thumbs li  article 
+{
+	background-color:@content-bg-color;
+	border-radius:5px;
+	opacity:0.9;
+
+}
+
+.da-thumbs li  img
+{
+	border:1px solid @content-bg-color;
+	border-radius:5px;
+	width:250px;
+
+}
+
+span.link_post
+	{
+		background-color:@content-head-color;
+	}
+	
+span.zoom
+	{
+		background-color:@content-head-color;
+	}
+
+/*polishing weird scroll bar we have  */
+
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: @content-head-color; }
+::-webkit-scrollbar-thumb {  background: #FFF; }
+
+
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/* End: Recommended Isotope styles */
+
