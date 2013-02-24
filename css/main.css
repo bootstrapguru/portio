@@ -1,0 +1,82 @@
+//Importing the bootstrap resources
+@import 'less/bootstrap';
+@import 'less/responsive';
+
+//variables which you can modify 
+
+@background-color:#eaeaea;
+
+/*Main css properties starts here */
+html	
+{
+	margin:0px;
+}
+
+body	
+{
+	font-family: 'Josefin Slab', serif;
+	font-size:16px;
+	background-color:@background-color;
+	
+}
+
+.tile 
+{
+	font-size:15px;
+}
+
+.blue
+{
+		background-color:#009cea;
+		width:100%;
+}
+.pink
+{
+		background-color:#a903b3;
+}
+.lightblue
+{
+		background-color:#009cad;
+}
+.green
+{
+		background-color:#00a000;
+}
+
+.days
+{
+	width:100%;
+	height:150px;
+	background-color:#009cea;
+}
+
+.hours
+{
+	width:100%;
+	height:150px;
+	background-color:#a903b3;
+}
+
+.minutes
+{
+	width:100%;
+	height:150px;
+	background-color:#009cad;
+}
+
+.seconds
+{
+	width:100%;
+	height:150px;
+	background-color:#00a000;
+}
+
+
+#dayss, #hourss, #minutess, #secondss
+	{
+		width:150px; height:120px;
+		display: inline-block;
+		margin: 1em;
+		color:white;
+
+     }
