@@ -80,6 +80,6 @@ $(document).ready(function(){
 
 $(window).load(function(){
 	setTimeout("$('body').find('.panel').removeClass('opacity')",800);
-	//setTimeout("$('body').find('.panel').removeClass('show')",1600);
+	setTimeout("$('body').find('.panel').removeClass('show')",1600);
 	
 });

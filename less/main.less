@@ -1,10 +1,17 @@
-//Importing the bootstrap resources
+/*************************************************************************
+	Importing bootstrap styles
+**************************************************************************/
 @import 'bootstrap';
 @import 'responsive';
 
-//variables which you can modify 
 
-
+/*************************************************************************
+	The below variables are defined with less css. So you can modify variables
+	below to effect whole theme. 
+	---------------------------------------------------------------------
+	PS: if you want to modify the below variables make sure to delete the
+	bottom line of this page to effect these changes
+**************************************************************************/
 @main-background-color:#202833;
 @second-color:#d77f27; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
 @content-text-color:#FFFFFF;
@@ -14,9 +21,9 @@
 @box-three-color:#009cad;
 @box-four-color:#00a000;
 
-
-
-/*Main css properties starts here */
+/*************************************************************************
+	Main css properties starts here 
+**************************************************************************/
 html	
 {
 	margin:0px;
@@ -30,22 +37,38 @@ body
 	
 }
 
+/*************************************************************************
+	Header styles 
+**************************************************************************/
 .header 
 {
 	width:100%;
-	background-color:@main-background-color;
+	background-color:@main-background-color; 
+	/* background:url(../img/header.jpg);   */  /*to enable background header remove the comments and give source to your image*/
 	border-bottom:4px solid @second-color;
 	padding-bottom:50px;
 	padding-top:25px;
 	color:@header-color;
-	
 }
-/* remove h1 and then define your image src and logo styles here*/
+
+/*************************************************************************
+	Logo - Remove h1 and then define your image src and logo styles here
+**************************************************************************/
+
 .logo h1
 {
 	font-size:150px;
 	color:#FFF
 }
+
+/*************************************************************************
+	Typography
+**************************************************************************/
+.header h1 ,h3
+{
+	padding-bottom:20px;
+}
+
 .title 
 {
 	font-size:50px;
@@ -53,6 +76,20 @@ body
 	color:@header-color;
 }
 
+.tile 
+{
+	font-size:15px;
+}
+
+.tagline
+{
+	color:#000;
+	padding-top:35px;
+}
+
+/*************************************************************************
+	Subscription form elements
+**************************************************************************/
 input[type="text"]
 {
 	width: 250px;
@@ -85,15 +122,16 @@ button
 	border-radius:4px;
 }
 
-.tile 
+#error_message_box
 {
-	font-size:15px;
-}
-.tagline
-{
-	color:#000;
+	color:@second-color;
+	height:15px;
 }
 
+
+/*************************************************************************
+	Metro Style Tiles- Slide up stylese
+**************************************************************************/
 .slide-up-boxes li
 { 
 	display: block; 
@@ -105,12 +143,11 @@ button
 	
 }
 
-.slide-up-boxes .topbox
+.slide-up-boxes .topbox 
 { 
 	color: @content-text-color; 
 	height: 150px; 
 	padding-top:20px;
-	/* Vertically center text by making line height equal to height */
 	opacity: 1;
 	-webkit-transition: all 0.2s linear; 
 	-moz-transition: all 0.2s linear; 
@@ -158,6 +195,10 @@ button
 	-moz-transform: rotate(0); 
 	-o-transform: rotate(0); 
 }
+
+/*************************************************************************************************
+	Metro tiles colors. These can be configured at the top of the page or in the predefined theme
+***************************************************************************************************/
 .boxone
 {
 	background-color:@box-one-color;
@@ -176,6 +217,9 @@ button
 	background-color:@box-four-color;
 }
 
+/*************************************************************************
+	Footer
+**************************************************************************/
 .footer
 {
 	position:fixed;
@@ -195,14 +239,19 @@ button
 	.footer-links li a
 	{
 		color:@content-text-color;
+		padding-left:15px;
 		&:hover
 		{
-		text-decoration:none;
-		color:@second-color;
+			text-decoration:none;
+			color:@second-color;
+		
+		}
 	}
 }
-}
 
+/****************************
+	Footer scoial icons
+*****************************/
 .social_icon(@img,@hoverimg)
 {
 	background:@img;
@@ -215,11 +264,21 @@ button
 	}
 }
 
+
 .invert-social_icon-colors(@img,@hoverimg)
 {
 	.social_icon(@hoverimg,@img)
 }
+/******************************************************************************************************
+To reverse the social icons colors for normal and hover state 
+use as follows
 
+.facebook  
+{
+	.invert-social_icon-colors(url(../img/social_icons/Facebook_g.png),url(../img/social_icons/Facebook.png));
+}
+
+**********************************************************************************************************/
 
 .facebook  
 {
@@ -245,7 +304,11 @@ button
 }
 
 
-/*Predefined themes */
+/******************************************************************************************************
+
+Predefined themes are below.  To change your theme, goto the bottom part and change the theme number
+
+**********************************************************************************************************/
 
 
 .theme1()
@@ -375,3 +438,10 @@ button
 		@box-four-color:#a200aa;
 }
 
+
+/******************************************************************************************************
+
+Change theme here- Just replace theme2(); with any one of the above themes
+
+*******************************************************************************************************/
+.theme2(); /*Default theme*/
