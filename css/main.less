@@ -1,10 +1,20 @@
 //Importing the bootstrap resources
-@import 'less/bootstrap';
-@import 'less/responsive';
+@import 'bootstrap';
+@import 'responsive';
 
 //variables which you can modify 
 
-@background-color:#eaeaea;
+
+@main-background-color:#202833;
+@second-color:#d77f27; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+@content-text-color:#FFFFFF;
+@header-color:@content-text-color;
+@box-one-color:#009cea;
+@box-two-color:#a903b3;
+@box-three-color:#009cad;
+@box-four-color:#00a000;
+
+
 
 /*Main css properties starts here */
 html	
@@ -16,12 +26,353 @@ body
 {
 	font-family: 'Josefin Slab', serif;
 	font-size:16px;
-	background-color:@background-color;
+	color:@content-text-color;
 	
 }
 
-.days
+.header 
 {
 	width:100%;
-	height:100%;
+	background-color:@main-background-color;
+	border-bottom:4px solid @second-color;
+	padding-bottom:50px;
+	padding-top:25px;
+	color:@header-color;
+	
 }
+/* remove h1 and then define your image src and logo styles here*/
+.logo h1
+{
+	font-size:150px;
+	color:#FFF
+}
+.title 
+{
+	font-size:50px;
+	padding-top:40px;
+	color:@header-color;
+}
+
+input[type="text"]
+{
+	width: 250px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid @second-color;
+	padding: 10px 20px;
+	margin: 0px 85px 0 0;
+	color:@second-color;
+	font-size: 16px;
+	outline:none;
+	
+}
+
+input[type="text"]:focus 
+{
+	border:none;
+	outline:none;
+	border-left: 1px solid @second-color;
+	text-indent: 5px; 
+}
+
+button
+{
+	background-color:@second-color;
+	border:none;
+	color:@content-text-color;
+	padding:10px 30px;
+	font-size:18px;
+	border-radius:4px;
+}
+
+.tile 
+{
+	font-size:15px;
+}
+.tagline
+{
+	color:#000;
+}
+
+.slide-up-boxes li
+{ 
+	display: block; 
+	height: 300px; 
+	background: @main-background-color; 
+	height: 150px; 
+	overflow: hidden; 
+	margin-bottom:100px;
+	
+}
+
+.slide-up-boxes .topbox
+{ 
+	color: @content-text-color; 
+	height: 150px; 
+	padding-top:20px;
+	/* Vertically center text by making line height equal to height */
+	opacity: 1;
+	-webkit-transition: all 0.2s linear; 
+	-moz-transition: all 0.2s linear; 
+	-o-transition: all 0.2s linear;
+}
+
+.slide-up-boxes .topbox i
+{ 
+	color: @content-text-color; 
+	font-size:65px;
+	
+}
+.slide-up-boxes .topbox p
+{ 
+	color: @content-text-color; 
+	font-size:18px;
+	line-height:25px;
+	
+}
+
+.slide-up-boxes li:hover .topbox
+{ 
+	margin-top: -150px; 
+	opacity: 0; 
+}
+
+.slide-up-boxes li  .bottombox 
+{ 
+	position: relative; 
+	color: white; 
+	font: 12px/15px Georgia, Serif;
+	height: 150px; 
+	opacity: 0; 
+	-webkit-transform: rotate(6deg); 
+	-webkit-transition: all 0.4s linear; 
+	-moz-transform: rotate(6deg); 
+	-moz-transition: all 0.4s linear; 
+	-o-transform: rotate(6deg); 
+	-o-transition: all 0.4s linear; 
+}
+.slide-up-boxes li:hover .bottombox 
+{ 
+	opacity: 1; 
+	-webkit-transform: rotate(0); 
+	-moz-transform: rotate(0); 
+	-o-transform: rotate(0); 
+}
+.boxone
+{
+	background-color:@box-one-color;
+		
+}
+.boxtwo
+{
+	background-color:@box-two-color ;
+}
+.boxthree
+{
+	background-color:@box-three-color;
+}
+.boxfour
+{
+	background-color:@box-four-color;
+}
+
+.footer
+{
+	position:fixed;
+	bottom: 0;
+	background-color:@main-background-color;
+	width:100%;
+	border-top:2px solid @second-color;
+	
+	li
+	{
+		padding-top:10px;
+		font-size:15px;
+		margin-right:25px;
+		
+		
+	}
+	.footer-links li a
+	{
+		color:@content-text-color;
+		&:hover
+		{
+		text-decoration:none;
+		color:@second-color;
+	}
+}
+}
+
+.social_icon(@img,@hoverimg)
+{
+	background:@img;
+	width:33px;
+	height:33px;
+	&:hover
+	{
+		background:@hoverimg;
+
+	}
+}
+
+.invert-social_icon-colors(@img,@hoverimg)
+{
+	.social_icon(@hoverimg,@img)
+}
+
+
+.facebook  
+{
+	.social_icon(url(../img/social_icons/Facebook_g.png),url(../img/social_icons/Facebook.png));
+}
+
+.google_plus
+{
+	.social_icon(url(../img/social_icons/Google+_g.png),url(../img/social_icons/Google+.png));
+}
+
+.twitter  
+{
+	.social_icon(url(../img/social_icons/Twitter_g.png),url(../img/social_icons/Twitter.png));
+}
+.vimeo 
+{
+	.social_icon(url(../img/social_icons/Vimeo_g.png),url(../img/social_icons/Vimeo.png)); 
+}
+.digg  
+{
+	.social_icon(url(../img/social_icons/Digg_g.png),url(../img/social_icons/Digg.png));
+}
+
+
+/*Predefined themes */
+
+
+.theme1()
+{
+		@main-background-color:#202833;
+		@second-color:#d77f27; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#FFFFFF;
+		@header-color:@content-text-color;
+		@box-one-color:#009cea;
+		@box-two-color:#a903b3;
+		@box-three-color:#009cad;
+		@box-four-color:#00a000;
+}
+
+.theme2()
+{
+		@main-background-color:#333333;
+		@second-color:#f05f5f; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#FFFFFF;
+		@header-color:#FFF;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#da542d;
+		@box-four-color:#a200aa;
+}
+
+.theme3()
+{
+		@main-background-color:#da542d;
+		@second-color:#000; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#FFFFFF;
+		@header-color:#000;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+.theme4()
+{
+		@main-background-color:#222930;
+		@second-color:#4EB1BA; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#E9E9E9;
+		@header-color:#E9E9E9;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+
+.theme5()
+{
+		@main-background-color:#763A7A;
+		@second-color:#0288AD; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#F6F3EC;
+		@header-color:#F6F3EC;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+
+.theme6()
+{
+		@main-background-color:#AC2832;
+		@second-color:#000000; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#F6F3EC;
+		@header-color:#DFD297;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+
+.theme7()
+{
+		@main-background-color:#4C3327;
+		@second-color:#CB8C1D; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#F6F3EC;
+		@header-color:#DFD297;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+.theme8()
+{
+		@main-background-color:#282827;
+		@second-color:#E25D33; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#DCD8CF;
+		@header-color:#DCD8CF;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+.theme9()
+{
+		@main-background-color:#ED1C24;
+		@second-color:#831618; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#FFFFFF;
+		@header-color:#FFFFFF;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+.theme10()
+{
+		@main-background-color:#D05A00;
+		@second-color:#29241E; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#FFFFFF;
+		@header-color:#FFFFFF;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+.theme11()
+{
+		@main-background-color:#343434;
+		@second-color:#99CD4E; /* default for input button, text , header border and footer links hover color. You can change below variables to set seperate colors  */
+		@content-text-color:#FFF;
+		@header-color:#DC5B21;
+		@box-one-color:#bc1d49;
+		@box-two-color:#009cea;
+		@box-three-color:#00a000;
+		@box-four-color:#a200aa;
+}
+
+.theme2(); /*Default theme*/
