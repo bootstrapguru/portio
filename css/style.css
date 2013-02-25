@@ -6,6 +6,7 @@
 	left:-300px;
 	top:100px;
 	width:300px;
+	height:230px;
 	display:block;
 	opacity: 1;
 	background-color:#ececec;
@@ -24,6 +25,13 @@
 	display:block;
 	right:-51px;
 	top:0px;
+	z-index:999;
+}
+.panel .theme_info {
+	position:absolute;
+	height:51px;
+	display:block;
+	bottom:0px;
 	z-index:999;
 }
 .panel.opacity {
@@ -82,7 +90,6 @@
 	display:block;
 	text-align:center;
 	font-weight:bold;
-	background-color:#FFF;
 	border:#3d3d3d 1px solid;
 	border-radius:50%;
 	transition: border-color 200ms;
@@ -92,7 +99,15 @@
 }
 .panel_item.color_panel li a.current,
 .panel_item.color_panel li a:hover {
-	border-color:#000;
+	border-color:#FFF;
+}
+.panel_item.color_panel li a.headerbg {
+	width:250px;
+	background:none;
+	position:absolute;
+	border:none;
+	border-radius:none;
+
 }
 
 @media (max-width: 767px) {

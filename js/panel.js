@@ -57,12 +57,12 @@ $(document).ready(function(){
 		theme = 'main';
 	}	
 
-
+	
 
 	$('body').append('<div class="panel opacity show"><a href="javascript:void(0)" class="settings"></a><span class="panel_title">Theme Switcher</span></div>');
 	panel = $('body').find('.panel');
 	
-	panel.append('<div class="panel_item color_panel"><ul class="color_list"><li class="color_item"><a class="theme1" rel="theme1" href="javascript:void(0)">1</a></li><li class="color_item"><a class="theme2" rel="theme2" href="javascript:void(0)">2</a></li><li class="color_item"><a class="theme3" rel="theme3" href="javascript:void(0)">3</a></li><li class="color_item"><a class="theme4" rel="theme4" href="javascript:void(0)">4</a></li><li class="color_item"><a class="theme5" rel="theme5" href="javascript:void(0)">5</a></li><li class="color_item"><a class="theme6" rel="theme6" href="javascript:void(0)">6</a></li><li class="color_item"><a class="theme7" rel="theme7" href="javascript:void(0)">7</a></li><li class="color_item"><a class="theme8" rel="theme8" href="javascript:void(0)">8</a></li><li class="color_item"><a class="theme9" rel="theme9" href="javascript:void(0)">9</a></li><li class="color_item"><a class="theme10" rel="theme10" href="javascript:void(0)">10</a></li><li class="color_item"><a class="theme11" rel="theme11" href="javascript:void(0)">11</a></li><li></li></ul>  <br /> and more custom themes 5sec to edit.. <div/>');
+	panel.append('<div class="panel_item color_panel"><ul class="color_list"><li class="color_item"><a class="theme1" rel="theme1" href="javascript:void(0)">1</a></li><li class="color_item"><a class="theme2" rel="theme2" href="javascript:void(0)">2</a></li><li class="color_item"><a class="theme3" rel="theme3" href="javascript:void(0)">3</a></li><li class="color_item"><a class="theme4" rel="theme4" href="javascript:void(0)">4</a></li><li class="color_item"><a class="theme5" rel="theme5" href="javascript:void(0)">5</a></li><li class="color_item"><a class="theme6" rel="theme6" href="javascript:void(0)">6</a></li><li class="color_item"><a class="theme7" rel="theme7" href="javascript:void(0)">7</a></li><li class="color_item"><a class="theme8" rel="theme8" href="javascript:void(0)">8</a></li><li class="color_item"><a class="theme9" rel="theme9" href="javascript:void(0)">9</a></li><li class="color_item"><a class="theme10" rel="theme10" href="javascript:void(0)">10</a></li><li class="color_item"><a class="theme11" rel="theme11" href="javascript:void(0)">11</a></li><li></li><li class="color_item"><a class="headerbg" rel="headerbg" href="javascript:void(0)">Enable header background</a></li></ul> <div class="theme_info"> and more custom themes 5sec to edit.. </div>   <div/>');
 	
 		$('.color_item a').bind('click', function(){
 		theme = $(this).attr('rel');
@@ -80,6 +80,6 @@ $(document).ready(function(){
 
 $(window).load(function(){
 	setTimeout("$('body').find('.panel').removeClass('opacity')",800);
-	setTimeout("$('body').find('.panel').removeClass('show')",1600);
+	//setTimeout("$('body').find('.panel').removeClass('show')",1600);
 	
 });
