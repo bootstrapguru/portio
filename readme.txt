@@ -2,14 +2,10 @@
 
 *****Installation******* 
 1. Place all the files in the root folder of your website.
-2. Open up index.html and then goto line number 38 and follow the instruction
-
- Then its all yours to use .
  
- 
- ******* Theme change *************
- 1. Open main.less file in css folder 
- 2. Goto bottom line of the page and then change theme to set your desired theme.
+*******To Change Theme (its easy, give a try) *************
+ 1. Open main.less file in less folder 
+ 2. Goto last line of the page and then change theme to set your desired theme.
  
 Credits:
 - Header background  http://www.freebiesbug.com/psd-freebies/30-hand-drawn-icons/
