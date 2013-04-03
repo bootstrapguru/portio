@@ -1,0 +1,120 @@
+
+/* This part is only for demo purpose to show color switcher. You can remove from here in your production site */
+
+.panel {
+	position:fixed;
+	left:-300px;
+	top:100px;
+	width:300px;
+	height:230px;
+	display:block;
+	opacity: 1;
+	background-color:#ececec;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	z-index:999;
+	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-o-transition: all 400ms;
+}
+.panel .settings {
+	position:absolute;
+	width:51px;
+	height:51px;
+	background:#FFF url(../img/settings.jpg) no-repeat center;
+	display:block;
+	right:-51px;
+	top:0px;
+	z-index:999;
+}
+.panel .theme_info {
+	position:absolute;
+	height:51px;
+	display:block;
+	bottom:0px;
+	z-index:999;
+}
+.panel.opacity {
+	opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.panel.show {
+	left:0px;
+}
+.panel .panel_title {
+	background:#FFF;
+	padding:0 0 0 17px;
+	line-height:46px;
+	height:51px;
+	display:block;
+	color:#000;
+	font-size:20px;
+	font-weight:bold;
+	text-align:left;
+}
+.panel a:hover {
+	text-decoration:none!important;
+}
+.ie8 .panel {
+	display:none!important;
+}
+.panel_item {
+	display:block;
+	background:#ececec;
+	margin:0 0 3px 0;
+	color:#000;
+}
+.panel_item.color_panel {
+	padding:20px 9px 9px 20px;
+
+}
+.color_list
+	{
+		background-color:#FFF;
+	}
+.panel_item.color_panel ul {
+	margin:0!important;
+
+}
+.panel_item.color_panel li {
+	margin:0 11px 11px 0;
+	display:inline-block;
+	float:left;
+	width:30px;
+	height:30px;
+}
+
+.panel_item.color_panel li a {
+	width:20px;
+	height:20px;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+	border:#3d3d3d 1px solid;
+	border-radius:50%;
+	transition: border-color 200ms;
+	-webkit-transition: border-color 200ms;
+	-moz-transition: border-color 200ms;
+	-o-transition: border-color 200ms;
+}
+.panel_item.color_panel li a.current,
+.panel_item.color_panel li a:hover {
+	border-color:#FFF;
+}
+.panel_item.color_panel li a.headerbg {
+	width:250px;
+	background:none;
+	position:absolute;
+	border:none;
+	border-radius:none;
+
+}
+
+@media (max-width: 340px) {
+  
+  .panel
+  	{
+		display:none;
+	}
+  
+}
