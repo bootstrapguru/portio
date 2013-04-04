@@ -82,6 +82,7 @@
 {
 	position:fixed;
 }
+
 }
 
 @media (max-width: 767px) {
@@ -924,6 +925,7 @@
 		margin-right:0px;
 		margin-bottom:100px;
 	}
+	
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }

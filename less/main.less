@@ -62,7 +62,6 @@ body
 .header h1, h2 ,h3
 {
 	padding-bottom:20px;
-	font-family: 'Josefin Slab', serif;
 	
 }
 
@@ -71,6 +70,8 @@ body
 	font-size:50px;
 	padding-top:40px;
 	color:@header-color;
+	font-family: 'Josefin Slab', serif;
+	
 }
 
 .tile 
@@ -175,7 +176,7 @@ button
 { 
 	position: relative; 
 	color: white; 
-	font: 12px/15px Georgia, Serif;
+	font: 12px/15px Sans-Serif;
 	height: 150px; 
 	opacity: 0; 
 	-webkit-transform: rotate(6deg); 
@@ -225,7 +226,7 @@ button
 	width:100%;
 	border-top:2px solid @second-color;
 	
-	li
+	a
 	{
 		padding-top:10px;
 		font-size:15px;
@@ -233,10 +234,15 @@ button
 		
 		
 	}
-	.footer-links li a
+	.footer-links
+	{
+		margin-top:20px;
+	}
+	.footer-links  a
 	{
 		color:@content-text-color;
 		padding-left:15px;
+		margin-top:15px;
 		&:hover
 		{
 			text-decoration:none;
