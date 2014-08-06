@@ -1,4 +1,3 @@
-****************First of all thanks for purchasing this theme******************
 
 *****Installation******* 
 1. Place all the files in the root folder of your website.
